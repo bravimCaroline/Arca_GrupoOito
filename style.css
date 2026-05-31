@@ -58,6 +58,15 @@ h2{
     font-size:30px;
 }
 
+button.button{
+    border:none;
+    outline:none;
+    appearance:none;
+    -webkit-appearance:none;
+    font:inherit;
+    margin-bottom: 12px;
+}
+
 .flex{
     display:flex;
     align-items:center;

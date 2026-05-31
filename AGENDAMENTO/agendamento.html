@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamentos</title>
-
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../PERFIL/perfil.css">
     <link rel="stylesheet" href="agd.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
@@ -18,7 +16,6 @@
     <div class="dashboard">
 
         <aside class="sidebar" id="sidebar">
-
             <div class="sidebar-content">
 
                 <div class="profile-sidebar">
@@ -27,7 +24,6 @@
                 </div>
 
                 <nav class="sidebar-menu">
-
                     <a href="../PERFIL/perfil.html">
                         <i class="fa-solid fa-circle-user"></i>
                         <span>Perfil</span>
@@ -42,22 +38,18 @@
                         <i class="fa-solid fa-calendar-days"></i>
                         <span>Agendamento</span>
                     </a>
-
                 </nav>
-
             </div>
 
             <a href="#" class="logout">
                 <i class="fa-solid fa-right-from-bracket"></i>
                 <span>Encerrar sessão</span>
             </a>
-
         </aside>
 
         <main class="main" id="main">
 
             <header class="topbar">
-
                 <button class="toggle-btn" id="toggleBtn">
                     <i class="fa-solid fa-bars"></i>
                 </button>
@@ -65,17 +57,13 @@
                 <div class="logo-title">
                     <a href="../index.html">LOGO</a>
                 </div>
-
             </header>
 
             <section class="content">
-
                 <h1 class="page-title">Seus Agendamentos</h1>
 
                 <div class="schedule-header">
-                    <button class="new-schedule-btn">
-                        Novo Agendamento
-                    </button>
+                    <button class="new-schedule-btn">Novo Agendamento</button>
                 </div>
 
                 <div class="schedule-stats">
@@ -123,7 +111,6 @@
                             <i class="fa-regular fa-calendar-xmark"></i>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="schedule-layout">
@@ -131,16 +118,13 @@
                     <div class="schedule-list-card">
 
                         <div class="schedule-filters">
-
                             <div class="search-box">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                                 <input type="text" placeholder="Busque o agendamento">
                             </div>
-
                             <select>
                                 <option>Todos</option>
                             </select>
-
                         </div>
 
                         <div class="appointment-list">
@@ -152,23 +136,17 @@
                                 </div>
 
                                 <div class="appointment-info">
-
                                     <div class="appointment-top">
                                         <span>A-4821</span>
-                                        <span class="badge badge-green">
-                                            Marcado
-                                        </span>
+                                        <span class="badge badge-green">Marcado</span>
                                     </div>
 
                                     <h4>Consulta de rotina - Nina</h4>
-
                                     <small>18/05/2026 - 08:40</small>
                                     <small>Dr. Firmino Gonçalves</small>
 
                                 </div>
-
                                 <i class="fa-solid fa-chevron-right"></i>
-
                             </div>
 
                             <div class="appointment-item">
@@ -181,89 +159,123 @@
 
                                     <div class="appointment-top">
                                         <span>A-7424</span>
-                                        <span class="badge badge-yellow">
-                                            Marcado
-                                        </span>
+                                        <span class="badge badge-yellow">Marcado</span>
                                     </div>
 
                                     <h4>Vacinação - Sirilo</h4>
-
                                     <small>07/05/2026 - 13:00</small>
                                     <small>Dr. José Machado</small>
 
                                 </div>
-
                                 <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="schedule-details-card popup-modal">
+            <div class="details-header">
+                <div>
+                    <span>A-9213</span>
+                    <h2>Faça seu agendamento</h2>
+                </div>
+            </div>
+
+            <div class="details-content">
+
+                <div class="popup-layout">
+
+                    <div>
+                        <div class="detail-group">
+
+                            <label>DATA</label>
+                            <div class="calendar">
+                                <div class="calendar-header flex flex-between">
+                                    <button type="button" id="prevMonth">
+                                        <i class="fa-solid fa-chevron-left"></i>
+                                    </button>
+                                    <span id="monthYear"></span>
+                                    <button type="button" id="nextMonth">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                                <div class="calendar-weekdays">
+                                    <span>D</span>
+                                    <span>S</span>
+                                    <span>T</span>
+                                    <span>Q</span>
+                                    <span>Q</span>
+                                    <span>S</span>
+                                    <span>S</span>
+                                </div>
+                                <div id="calendarDays"></div>
                             </div>
 
                         </div>
-
                     </div>
 
-                    <div class="schedule-details-card">
-
-                        <div class="details-header">
-
-                            <span>A-4821</span>
-
-                            <h2>
-                                Consulta de rotina - Nina
-                            </h2>
-
+                    <div>
+                        <div class="detail-group">
+                            <label>ANIMAL</label>
+                            <select>
+                                <option>Sirilo - Cachorro</option>
+                                <option>Nina - Gato</option>
+                            </select>
                         </div>
 
-                        <div class="details-content">
-
-                            <div class="detail-group">
-                                <label>DATA</label>
-                                <span>28/05/2026 - 09:30</span>
-                            </div>
-
-                            <div class="detail-group">
-                                <label>PROFISSIONAL</label>
-                                <span>Dr. Ricardo Mendes</span>
-                            </div>
-
-                            <div class="detail-group">
-                                <label>CONTATO</label>
-                                <span>(27) 1234-6767</span>
-                            </div>
-
-                            <div class="detail-group">
-                                <label>OBSERVAÇÃO</label>
-
-                                <p>
-                                    Nina apresentou coceira intensa nas orelhas na semana passada.
-                                    Trazer histórico de vacinação atualizado.
-                                </p>
-                            </div>
-
+                        <div class="detail-group">
+                            <label>SERVIÇO</label>
+                            <select>
+                                <option>Consulta</option>
+                                <option>Vacinação</option>
+                                <option>Banho</option>
+                            </select>
                         </div>
 
-                        <div class="details-actions">
-
-                            <button class="confirm-btn">
-                                Confirmar Presença
-                            </button>
-
-                            <button class="reschedule-btn">
-                                Remarcar
-                            </button>
-
+                        <div class="detail-group">
+                            <label>HORA</label>
+                            <select id="hora">
+                                <option>Selecione uma data</option>
+                            </select>
                         </div>
 
+                        <div class="detail-group">
+                            <label>OBSERVAÇÃO</label>
+                            <textarea rows="5"></textarea>
+                        </div>
                     </div>
 
                 </div>
+            </div>
 
-            </section>
+            <div class="details-actions">
+                <button class="confirm-btn" id="confirmSchedule">Confirmar</button>
+                <button class="reschedule-btn" id="cancelSchedule">Cancelar</button>
+            </div>
+        </div>
+    </div>
 
-        </main>
 
+    <div class="success-popup" id="successPopup">
+        <div class="stat-icon blue">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <h3>Agendamento realizado!</h3>
+        <br>
+        <p>Verifique os detalhes do agendamento na área correspondente.</p>
+        <br>
+        <br>
+        <button class="confirm-btn" id="closeSuccessPopup">
+        Finalizar
+    </button>
     </div>
 
     <script src="../sidebar.js"></script>
+    <script src="agd.js"></script>
 
 </body>
 
