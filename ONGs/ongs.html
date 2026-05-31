@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONGs Parceiras</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="ongs.css">
+</head>
+
+<body>
+
+ <header class="header flex flex-between">
+        <div class="logo">
+            <img src="../PNG/logo.png" alt="Logo">
+        </div>
+
+        <nav class="menu flex">
+            <a href="../index.html">Home</a>
+            <a href="../noticias.html">Notícias</a>
+            <a href="../ongs.html">ONGs</a>
+            <a href="../PERFIL/perfil.html">Perfil</a>
+        </nav>
+    </header>
+   
+    <section class="ongs-banner flex flex-center">
+
+        <div class="banner-image">
+            <img src="../PNG/abraco.png" alt="ONGs">
+        </div>
+
+        <div class="banner-message">
+
+            <h1>ONGs Parceiras</h1>
+
+            <p>
+                Conheça as organizações que ajudam
+                animais todos os dias com amor,
+                cuidado e proteção.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="ongs-content">
+
+        <div class="ongs-grid">
+
+            <div class="ong-card card">
+
+                <div class="ong-image">
+                    <img src="../PNG/pata.webp" alt="ONG">
+                </div>
+
+                <div class="ong-info">
+
+                    <h2>Patinhas Felizes</h2>
+
+                    <p>
+                        ONG dedicada ao resgate,
+                        tratamento e adoção de cães e gatos.
+                    </p>
+
+                    <div class="ong-tags">
+                        <span>Resgate</span>
+                        <span>Adoção</span>
+                    </div>
+
+                    <button class="button button-secondary"
+                        onclick="abrirPopupONG(
+                        'Patinhas Felizes',
+                        'Vitória - ES',
+                        'Mais de 300 animais resgatados.',
+                        '../PNG/dog1.jpg'
+                    )">
+
+                        Conhecer ONG
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="ong-card card">
+
+                <div class="ong-image">
+                    <img src="../PNG/pata2.jpg" alt="ONG">
+                </div>
+
+                <div class="ong-info">
+
+                    <h2>Anjos de Rua</h2>
+
+                    <p>
+                        Projeto social focado em animais
+                        abandonados e vítimas de maus-tratos.
+                    </p>
+
+                    <div class="ong-tags">
+                        <span>Proteção</span>
+                        <span>Denúncias</span>
+                    </div>
+
+                    <button class="button button-secondary"
+                        onclick="abrirPopupONG(
+                        'Anjos de Rua',
+                        'Vila Velha - ES',
+                        'Atuação em resgates emergenciais.',
+                        '../PNG/dog2.jpg'
+                    )">
+
+                        Conhecer ONG
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="ong-card card">
+
+                <div class="ong-image">
+                    <img src="../PNG/volunteer.webp" alt="ONG">
+                </div>
+
+                <div class="ong-info">
+
+                    <h2>Lar Animal</h2>
+
+                    <p>
+                        ONG parceira especializada
+                        em reabilitação e adoção responsável.
+                    </p>
+
+                    <div class="ong-tags">
+                        <span>Cuidados</span>
+                        <span>Reabilitação</span>
+                    </div>
+
+                    <button class="button button-secondary"
+                        onclick="abrirPopupONG(
+                        'Lar Animal',
+                        'Serra - ES',
+                        'Mais de 10 anos salvando vidas.',
+                        '../PNG/dog3.jpg'
+                    )">
+
+                        Conhecer ONG
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 Grupo Oito, Projeto Arca CC1N UVV</p>
+    </footer>
+
+
+    <div id="popup-ong" class="popup-overlay">
+
+        <div class="popup card">
+
+            <button class="popup-close"
+                onclick="fecharPopupONG()">
+
+                ×
+
+            </button>
+
+            <div class="popup-body">
+
+                <div class="popup-image">
+                    <img id="popup-img" src="" alt="ONG">
+                </div>
+
+                <div class="popup-info">
+
+                    <h2 id="popup-nome"></h2>
+
+                    <p>
+                        <strong>Localização:</strong>
+                        <span id="popup-local"></span>
+                    </p>
+
+                    <p>
+                        <strong>Descrição:</strong>
+                        <span id="popup-desc"></span>
+                    </p>
+
+                    <button class="button button-secondary">
+                        Entrar em contato
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="ongs.js"></script>
+
+</body>
+
+</html>
+```
