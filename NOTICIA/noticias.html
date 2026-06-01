@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="noticias.css">
+</head>
+
+<body>
+
+    <header class="header flex flex-between">
+
+        <div class="logo">
+            <img src="../PNG/logo.png" alt="Logo">
+        </div>
+        <nav class="menu flex">
+            <a href="../index.html">Home</a>
+            <a href="../NOTICIA/noticias.html">Notícias</a>
+            <a href="../ONGs/ongs.html">ONGs</a>
+            <a href="../PERFIL/perfil.html">Perfil</a>
+        </nav>
+       
+
+    </header>
+
+    <section class="news-banner flex flex-center">
+
+        <div class="banner-image">
+            <img src="../PNG/jornal.png" alt="Notícias">
+        </div>
+
+        <div class="banner-message">
+
+            <h1>Notícias & Informações</h1>
+
+            <p>
+                Acompanhe novidades, campanhas,
+                resgates e ações em defesa dos animais.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="news-content">
+
+        <div class="news-grid">
+
+            <div class="news-card card">
+
+                <div class="news-image">
+                    <img src="../PNG/feira.webp" alt="">
+                </div>
+
+                <div class="news-info">
+
+                    <span class="news-date">
+                        31 Maio 2026
+                    </span>
+
+                    <h2>
+                        Feira de adoção encontra lar
+                        para mais de 50 animais
+                    </h2>
+
+                    <p>
+                        Evento realizado em Vitória reuniu
+                        ONGs parceiras e dezenas de famílias.
+                    </p>
+
+                    <button class="button button-secondary"
+                        onclick="abrirPopupNoticia(
+                        'Feira de adoção encontra lar para mais de 50 animais',
+                        'Evento realizado em Vitória reuniu ONGs parceiras e dezenas de famílias.',
+                        '../PNG/noticia1.png'
+                    )">
+
+                        Ler mais
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="news-card card">
+
+                <div class="news-image">
+                    <img src="../PNG/campanha.jpeg" alt="racao">
+                </div>
+
+                <div class="news-info">
+
+                    <span class="news-date">
+                        28 Maio 2026
+                    </span>
+
+                    <h2>
+                        Campanha arrecada ração
+                        para animais resgatados
+                    </h2>
+
+                    <p>
+                        Projeto social conseguiu arrecadar
+                        mais de 2 toneladas de ração.
+                    </p>
+
+                    <button class="button button-secondary"
+                        onclick="abrirPopupNoticia(
+                        'Campanha arrecada ração para animais resgatados',
+                        'Projeto social conseguiu arrecadar mais de 2 toneladas de ração para cães e gatos.',
+                        '../PNG/noticia2.png'
+                    )">
+
+                        Ler mais
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="news-card card">
+
+                <div class="news-image">
+                    <img src="../PNG/espaco.jpeg" alt="">
+                </div>
+
+                <div class="news-info">
+
+                    <span class="news-date">
+                        20 Maio 2026
+                    </span>
+
+                    <h2>
+                        ONG amplia espaço para
+                        receber novos animais
+                    </h2>
+
+                    <p>
+                        Novo ambiente ajudará no resgate
+                        e tratamento de animais.
+                    </p>
+
+                    <button class="button button-secondary"
+                        onclick="abrirPopupNoticia(
+                        'ONG amplia espaço para receber novos animais',
+                        'Novo ambiente ajudará no resgate e tratamento de animais abandonados.',
+                        '../PNG/noticia3.png'
+                    )">
+
+                        Ler mais
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 Grupo Oito, Projeto Arca CC1N UVV</p>
+    </footer>
+
+
+    <div id="popup-news" class="popup-overlay">
+
+        <div class="popup card">
+
+            <button class="popup-close"
+                onclick="fecharPopupNoticia()">
+
+                ×
+
+            </button>
+
+            <div class="popup-body">
+
+                <div class="popup-image">
+                    <img id="popup-img" src="" alt="">
+                </div>
+
+                <div class="popup-info">
+
+                    <h2 id="popup-title"></h2>
+
+                    <p id="popup-text"></p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="noticias.js"></script>
+
+</body>
+
+</html>

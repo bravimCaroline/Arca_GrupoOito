@@ -6,12 +6,13 @@
 }
 
 .banner-animal img{
-    height:260px;
+    height:285px;
 }
 
 .banner-message{
     max-width:600px;
     color:var(--branco);
+    
 }
 
 .banner-message h1{
@@ -22,6 +23,7 @@
 .banner-message p{
     font-size:20px;
     line-height:1.4;
+    width: 100%;
 }
 
 .denuncia-content{
@@ -31,7 +33,7 @@
 }
 
 .form-container{
-    max-width:700px;
+    max-width:90000px;
     margin:0 auto;
     padding:40px;
     border-radius:20px;
