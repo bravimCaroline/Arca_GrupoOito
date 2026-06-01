@@ -26,12 +26,12 @@
 
 .faq-content{
     background:#c8dbea;
-    min-height:100vh;
+    min-height:50vh;
     padding:60px 20px;
 }
 
 .faq-container{
-    max-width:900px;
+    max-width:400px;
     margin:0 auto;
     display:flex;
     flex-direction:column;

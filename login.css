@@ -1,0 +1,99 @@
+.login-popup{
+    width:620px;
+    max-width:90vw;
+}
+
+.login-tabs,
+.user-type-tabs{
+    display:flex;
+    gap:0;
+    margin-bottom:15px;
+}
+
+.login-tabs button,
+.user-type-tabs button{
+    flex:1;
+}
+
+.login-form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.login-form label{
+    font-size:12px;
+    color:#98a2b3;
+}
+
+.login-form input{
+    width:100%;
+    height:42px;
+    padding:0 12px;
+    border:1px solid #d7dee7;
+    border-radius:8px;
+}
+
+.login-divider{
+    text-align:center;
+    color:#98a2b3;
+    font-size:12px;
+    margin:10px 0;
+    position:relative;
+}
+
+.login-divider::before,
+.login-divider::after{
+    content:"";
+    position:absolute;
+    top:50%;
+    width:35%;
+    height:1px;
+    background:#d7dee7;
+}
+
+.login-divider::before{
+    left:0;
+}
+
+.login-divider::after{
+    right:0;
+}
+
+.popup-actions{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    margin-top:10px;
+}
+
+.popup-actions button{
+    flex:1;
+}
+
+.hidden{
+    display:none;
+}
+
+.confirm-btn,
+.reschedule-btn,
+.login-tabs button,
+.user-type-tabs button{
+    cursor:pointer;
+    transition:.2s ease;
+}
+
+.confirm-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 4px 12px rgba(0,0,0,.12);
+}
+
+.reschedule-btn:hover{
+    background:#d6dde5;
+    transform:translateY(-2px);
+}
+
+.login-tabs button:hover,
+.user-type-tabs button:hover{
+    opacity:.9;
+}
