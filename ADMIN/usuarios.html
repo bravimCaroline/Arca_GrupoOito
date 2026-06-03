@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios | ADM</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="usuarios.css">
+</head>
+
+<body>
+
+    <div class="admin-shell">
+
+        <aside class="admin-sidebar">
+
+            <div class="profile">
+                <div class="profile-avatar">
+                    <img src="../PNG/prefeitura.png" alt="Administrador">
+                </div>
+
+                <p>Bem vindo</p>
+                <strong>Khazix</strong>
+            </div>
+
+            <nav class="admin-menu">
+                <a href="perfil.html" class="menu-link">
+                    Perfil do ADM
+                </a>
+
+                <a href="usuarios.html" class="menu-link active">
+                    Usuários comuns
+                </a>
+
+                <a href="ongs.html" class="menu-link">
+                    ONGs
+                </a>
+
+                <a href="noticias.html" class="menu-link">
+                    Notícias
+                </a>
+            </nav>
+
+            <a href="../index.html" class="logout">
+                Encerrar sessão
+            </a>
+
+        </aside>
+
+        <div class="admin-content">
+
+            <header class="topbar">
+                <button class="topbar-button" aria-label="Abrir menu"></button>
+
+                <img src="../PNG/logo.png" alt="Arca" class="topbar-logo">
+
+                <a href="../index.html" class="home-link" aria-label="Home">⌂</a>
+            </header>
+
+            <main class="users-page">
+
+                <section class="users-panel">
+                    <h1>Usuários</h1>
+                    <p>Gerencie os usuários disponíveis</p>
+
+                    <label class="search-field" aria-label="Buscar pet">
+                        <span>⌕</span>
+                        <input type="search" placeholder="Buscar pet...">
+                    </label>
+
+                    <div class="users-table-wrap">
+                        <table class="users-table">
+                            <thead>
+                                <tr>
+                                    <th>Usuário</th>
+                                    <th>Cadastro</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="user-info">
+                                            <img src="../PNG/usu.png.png" alt="Ana Paula Costa">
+
+                                            <div>
+                                                <strong>Ana Paula Costa</strong>
+                                                <span>✉ ana.p@email.com</span>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>12/03/2025</td>
+
+                                    <td>
+                                        <button class="delete-button" aria-label="Excluir Ana Paula Costa"></button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="user-info">
+                                            <img src="../PNG/usu.png.png" alt="Carlos Alberto">
+
+                                            <div>
+                                                <strong>Carlos Alberto</strong>
+                                                <span>✉ carlos.a@email.com</span>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>20/02/2025</td>
+
+                                    <td>
+                                        <button class="delete-button" aria-label="Excluir Carlos Alberto"></button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="user-info">
+                                            <img src="../PNG/usu.png.png" alt="Tristana Khazix">
+
+                                            <div>
+                                                <strong>Tristana Khazix</strong>
+                                                <span>✉ tristanakhazix@email.com</span>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>18/04/2026</td>
+
+                                    <td>
+                                        <button class="delete-button" aria-label="Excluir Tristana Khazix"></button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="user-info">
+                                            <img src="../PNG/usu.png.png" alt="Roberto Malphite">
+
+                                            <div>
+                                                <strong>Roberto Malphite</strong>
+                                                <span>✉ malphite@email.com</span>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>30/05/2026</td>
+
+                                    <td>
+                                        <button class="delete-button" aria-label="Excluir Roberto Malphite"></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

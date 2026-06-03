@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONGs | ADM</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="usuarios.css">
+    <link rel="stylesheet" href="adm-pages.css">
+</head>
+
+<body>
+
+    <div class="admin-shell">
+        <aside class="admin-sidebar">
+            <div class="profile">
+                <div class="profile-avatar">
+                    <img src="../PNG/prefeitura.png" alt="Administrador">
+                </div>
+
+                <p>Bem vindo</p>
+                <strong>Khazix</strong>
+            </div>
+
+            <nav class="admin-menu">
+                <a href="perfil.html" class="menu-link">
+                    <span class="menu-icon">●</span>
+                    Perfil do ADM
+                </a>
+
+                <a href="usuarios.html" class="menu-link">
+                    <span class="menu-icon">✦</span>
+                    Usuários comuns
+                </a>
+
+                <a href="ongs.html" class="menu-link active">
+                    <span class="menu-icon">⌂</span>
+                    ONGs
+                </a>
+
+                <a href="noticias.html" class="menu-link">
+                    <span class="menu-icon">▣</span>
+                    Notícias
+                </a>
+            </nav>
+
+            <a href="../index.html" class="logout">
+                <span class="menu-icon">◂</span>
+                Encerrar sessão
+            </a>
+        </aside>
+
+        <div class="admin-content">
+            <header class="topbar">
+                <button class="topbar-button" aria-label="Abrir menu">□</button>
+                <img src="../PNG/logo.png" alt="Arca" class="topbar-logo">
+                <a href="../index.html" class="home-link" aria-label="Home">⌂</a>
+            </header>
+
+            <main class="adm-page">
+                <section class="adm-header">
+                    <div>
+                        <h1>ONGs</h1>
+                        <p>1 organizações cadastradas</p>
+                    </div>
+
+                    <button class="adm-action">Cadastrar pet</button>
+                </section>
+
+                <article class="ong-card">
+                    <div class="ong-card-head">
+                        <span class="ong-icon">▣</span>
+
+                        <div>
+                            <h2>Amor de Patas</h2>
+                            <small>Serra, ES</small>
+                        </div>
+
+                        <span class="status-pill">Ativa</span>
+                    </div>
+
+                    <div class="ong-card-foot">
+                        <span class="pet-count">♧ 12 pets</span>
+                        <button class="detail-button">◉ Ver detalhe</button>
+                    </div>
+                </article>
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>

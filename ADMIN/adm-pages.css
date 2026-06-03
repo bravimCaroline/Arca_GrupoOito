@@ -1,0 +1,369 @@
+.adm-page {
+    padding: 29px 34px;
+}
+
+.adm-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    max-width: 900px;
+    margin-bottom: 32px;
+    padding: 0;
+}
+
+.adm-header h1,
+.profile-page h1 {
+    margin: 0 0 8px;
+    color: #2e3748;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1;
+    text-shadow: none;
+}
+
+.adm-header p {
+    color: #8795ad;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.adm-action {
+    min-width: 142px;
+    height: 35px;
+    margin-top: 8px;
+    border: 0;
+    border-radius: 4px;
+    background: #22b9cf;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.ong-card {
+    width: 286px;
+    min-height: 104px;
+    padding: 16px 16px 14px;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.ong-card-head {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.ong-icon {
+    width: 31px;
+    height: 31px;
+    border-radius: 6px;
+    background: #e8edf4;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #1d2635;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.ong-card h2 {
+    margin-top: 2px;
+    color: #1f2938;
+    font-size: 11px;
+    line-height: 1.1;
+}
+
+.ong-card small {
+    color: #617088;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.status-pill {
+    margin-left: auto;
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: #bff1d1;
+    color: #198742;
+    font-size: 9px;
+    font-weight: 800;
+}
+
+.ong-card-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.pet-count {
+    color: #526078;
+    font-size: 10px;
+}
+
+.detail-button {
+    height: 23px;
+    padding: 0 12px;
+    border: 0;
+    border-radius: 4px;
+    background: #e6ebf2;
+    color: #1c2535;
+    font-size: 9px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.news-list {
+    width: 900px;
+    max-width: 100%;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 13px 18px 18px 13px;
+    padding: 0;
+}
+
+.news-item {
+    display: grid;
+    grid-template-columns: 62px 1fr 170px 58px;
+    align-items: center;
+    min-height: 67px;
+    padding: 8px 36px 8px 16px;
+    border-bottom: 1px solid #aeb8c4;
+}
+
+.news-item:last-child {
+    border-bottom: 0;
+}
+
+.news-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.news-text strong {
+    display: block;
+    color: #1f2938;
+    font-size: 16px;
+    line-height: 1.1;
+}
+
+.news-text span,
+.news-date {
+    color: #25324a;
+    font-size: 10px;
+}
+
+.news-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.icon-button {
+    width: 22px;
+    height: 22px;
+    border: 0;
+    background: transparent;
+    color: #111;
+    font-size: 17px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.profile-page {
+    padding: 25px 54px;
+}
+
+.profile-card {
+    width: 860px;
+    max-width: 100%;
+    min-height: 393px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 0 14px 14px 14px;
+    padding: 0;
+}
+
+.profile-banner {
+    height: 68px;
+    background: #1096a7;
+}
+
+.profile-body {
+    padding: 0 26px 18px;
+}
+
+.adm-identity {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    transform: translateY(-26px);
+}
+
+.city-seal {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border: 9px solid #d7fbff;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #207b85;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.city-seal::after {
+    content: "";
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #22b9cf;
+    border: 3px solid #d7fbff;
+}
+
+.adm-identity strong {
+    color: #263147;
+    font-size: 12px;
+}
+
+.profile-divider {
+    height: 1px;
+    margin-top: -14px;
+    background: #bdc7d4;
+}
+
+.profile-section-title {
+    margin: 10px 0 52px;
+    color: #2d3748;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    gap: 22px 138px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 4px;
+    color: #2c3446;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.field input {
+    width: 100%;
+    height: 31px;
+    padding: 0 10px;
+    border: 1px solid #aeb7c5;
+    border-radius: 2px;
+    background: #f2f4f7;
+    color: #9ca6b7;
+    font-size: 11px;
+}
+
+.tool-title {
+    margin-top: 24px;
+    color: #263147;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.tool-subtitle {
+    margin-top: 2px;
+    color: #748197;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    gap: 138px;
+    margin-top: 88px;
+}
+
+.tool-card {
+    min-height: 77px;
+    padding: 18px 24px;
+    border: 1px solid #73ddef;
+    border-radius: 10px;
+    background: #d5faff;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.tool-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background: #22b9cf;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.tool-card strong {
+    display: block;
+    margin-bottom: 6px;
+    color: #213047;
+    font-size: 14px;
+}
+
+.tool-card span {
+    color: #536178;
+    font-size: 10px;
+}
+
+@media (max-width: 760px) {
+    .adm-page,
+    .profile-page {
+        padding: 32px 16px;
+    }
+
+    .adm-header {
+        display: block;
+    }
+
+    .adm-action {
+        margin-top: 18px;
+    }
+
+    .news-list {
+        overflow-x: auto;
+    }
+
+    .news-item {
+        min-width: 650px;
+    }
+
+    .profile-card {
+        min-height: auto;
+    }
+
+    .form-grid,
+    .tool-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .tool-grid {
+        margin-top: 42px;
+    }
+}
