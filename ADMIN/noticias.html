@@ -8,62 +8,77 @@
 
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../login.css">
-    <link rel="stylesheet" href="usuarios.css">
-    <link rel="stylesheet" href="adm-pages.css">
+    <link rel="stylesheet" href="../PREFEITURA/denunciap.css">
+    <link rel="stylesheet" href="../ZCSS/perfil.css">
+    <link rel="stylesheet" href="../ZCSS/agd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-    <div class="admin-shell">
-        <aside class="admin-sidebar">
-            <div class="profile">
-                <div class="profile-avatar">
-                    <img src="../PNG/prefeitura.png" alt="Administrador">
+    <div class="dashboard">
+
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-content">
+
+                <div class="profile-sidebar">
+                    <img src="../PNG/prefeitura.png" alt="">
+                    <h3>Bem vindo<br><b>Adm</b></h3>
                 </div>
 
-                <p>Bem vindo</p>
-                <strong>Khazix</strong>
+                <nav class="sidebar-menu">
+
+                    <a href="perfil.html">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span>Perfil</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <span>Denúncias</span>
+                    </a>
+
+                    <a href="solicitacoes.html">
+                        <i class="fa-solid fa-address-card"></i>
+                        <span>Solicitações</span>
+                    </a>
+
+                    <a href="ongs.html">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        <span>ONGs</span>
+                    </a>
+
+                    <a href="noticias.html">
+                        <i class="fa-solid fa-newspaper"></i>
+                        <span>Notícias</span>
+                    </a>
+
+                </nav>
+
             </div>
 
-            <nav class="admin-menu">
-                <a href="perfil.html" class="menu-link">
-                    <span class="menu-icon">●</span>
-                    Perfil do ADM
-                </a>
-
-                <a href="usuarios.html" class="menu-link">
-                    <span class="menu-icon">✦</span>
-                    Usuários comuns
-                </a>
-
-                <a href="ongs.html" class="menu-link">
-                    <span class="menu-icon">⌂</span>
-                    ONGs
-                </a>
-
-                <a href="noticias.html" class="menu-link active">
-                    <span class="menu-icon">▣</span>
-                    Notícias
-                </a>
-
-                <a href="denuncias.html" class="menu-link">
-                    <span class="menu-icon">!</span>
-                    Denúncias
-                </a>
-            </nav>
-
-            <a href="../index.html" class="logout">
-                <span class="menu-icon">◂</span>
-                Encerrar sessão
+            <a href="#" class="logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Encerrar sessão</span>
             </a>
+
         </aside>
 
-        <div class="admin-content">
+        <main class="main" id="main">
+
             <header class="topbar">
-                <button class="topbar-button" aria-label="Abrir menu">□</button>
-                <img src="../PNG/logo.png" alt="Arca" class="topbar-logo">
-                <a href="../index.html" class="home-link" aria-label="Home">⌂</a>
+
+                <button class="toggle-btn" id="toggleBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="logo-title">
+                    <a href="home.html"><img src="../PNG/logo.png" alt=""></a>
+                </div>
+
             </header>
+
 
             <main class="adm-page">
                 <section class="adm-header">
@@ -125,9 +140,12 @@
                     </article>
                 </section>
             </main>
-        </div>
+    </div>
     </div>
 
 </body>
+<script src="../sidebar.js"></script>
+<script src="../ZJS/deslogar.js"></script>
+<script src="../ADMIN/denuncias.js"></script>
 
 </html>
