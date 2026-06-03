@@ -63,7 +63,7 @@
 
         <div class="flex flex-center wrap gap">
             
-            <a href="#" class="card service-card flex flex-center column">
+            <a href="#" class="card service-card flex flex-center column" id="agndBtn">
                 <img src="PNG/calendar.png" alt="">
                 <br>
                 <h3>Consulta</h3>
@@ -75,7 +75,7 @@
                 <h3>Adoção</h3>
             </a>
             
-            <a href="./DENUNCIA/denuncia.html" class="card service-card flex flex-center column">
+            <a href="./UNLOGGED/denuncia.html" class="card service-card flex flex-center column">
                 <img src="PNG/speaker.png" alt="">
                 <br>
                 <h3>Denúncia</h3>
@@ -269,6 +269,17 @@
                 <button class="confirm-btn" id="confirmCancel">Sim</button>
                 <button class="reschedule-btn" id="closeConfirm">Não</button>
             </div>
+        </div>
+    </div>
+
+    <div class="popup-overlay" id="successPopup">
+        <div class="popup popup-success">
+            <h3>Oops! Algo deu errado</h3>
+            <br>
+            <p>Você deve estar logado para enviar uma solicitação.</p>
+            <br>
+            <br>
+            <button class="confirm-btn" id="closeSuccessPopup">Voltar</button>
         </div>
     </div>
 
