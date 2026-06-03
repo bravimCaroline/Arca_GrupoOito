@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../ZCSS/faq.css">
+    <link rel="stylesheet" href="../ZCSS/agd.css">
+    <link rel="stylesheet" href="../login.css">
+</head>
+<body>
+    <header class="header flex flex-between">
+        <div class="logo">
+            <img src="../PNG/logo.png" alt="Logo">
+        </div>
+
+        <nav class="menu flex">
+            <a href="../index.html">Home</a>
+            <div class="filter-divider"></div>
+            <a href="noticias.html">Notícias</a>
+            <div class="filter-divider"></div>
+            <a href="ongs.html">ONGs</a>
+            <div class="filter-divider"></div>
+            <a href="#" id="perfilBtn">Perfil</a>
+        </nav>
+    </header>
+
+    <section class="faq-banner flex flex-center">
+
+        <div class="banner-image">
+            <img src="../PNG/faq.png" alt="FAQ">
+        </div>
+
+        <div class="banner-message">
+            <h1>Perguntas Frequentes</h1>
+
+            <p>
+                Tire suas dúvidas sobre adoção,
+                denúncias e funcionamento da plataforma.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="faq-content">
+
+        <div class="faq-container">
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Como funciona a adoção?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Após enviar uma solicitação de adoção,
+                        a ONG responsável analisará suas informações
+                        e entrará em contato.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Posso denunciar anonimamente?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Sim. Você pode optar por não informar
+                        seus dados pessoais no formulário de denúncia.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Como sei se minha denúncia foi analisada?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Nossa equipe revisa todas as denúncias.
+                        Em breve você poderá acompanhar o status
+                        diretamente pelo perfil.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Existe algum custo para adotar?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Não. O processo de adoção é gratuito,
+                        mas algumas ONGs podem solicitar entrevista
+                        e termo de responsabilidade.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Posso cadastrar um animal para adoção?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Em breve a plataforma terá uma área
+                        específica para cadastro de animais.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 Grupo Oito, Projeto Arca CC1N UVV</p>
+    </footer>
+
+    <div class="popup-overlay" id="confirmOverlay">
+        <div class="popup popup-success">
+            <h3>Tem certeza?</h3>
+            <p>As informações não serão salvas</p>
+            <div class="popup-actions">
+                <button class="confirm-btn" id="confirmCancel">Sim</button>
+                <button class="reschedule-btn" id="closeConfirm">Não</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../logar.js"></script>
+    <script src="faq.js"></script>
+
+</body>
+</html>

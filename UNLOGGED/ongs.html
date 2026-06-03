@@ -7,7 +7,9 @@
     <title>ONGs Parceiras</title>
 
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="ongs.css">
+    <link rel="stylesheet" href="../ZCSS/ongs.css">
+    <link rel="stylesheet" href="../ZCSS/agd.css">
+    <link rel="stylesheet" href="../login.css">
 </head>
 
 <body>
@@ -19,9 +21,12 @@
 
         <nav class="menu flex">
             <a href="../index.html">Home</a>
-            <a href="../NOTICIA/noticias.html">Notícias</a>
-            <a href="../ongs.html">ONGs</a>
-            <a href="../PERFIL/perfil.html">Perfil</a>
+            <div class="filter-divider"></div>
+            <a href="noticias.html">Notícias</a>
+            <div class="filter-divider"></div>
+            <a href="#">ONGs</a>
+            <div class="filter-divider"></div>
+            <a href="#" id="perfilBtn">Login</a>
         </nav>
     </header>
    
@@ -209,7 +214,91 @@
 
     </div>
 
-    <script src="ongs.js"></script>
+
+    <div class="popup-overlay" id="loginOverlay">
+        <div class="popup login-popup">
+
+            <button class="popup-close" id="closeLogin">×</button>
+
+            <div id="loginScreen">
+
+                <div class="login-tabs">
+                    <button class="confirm-btn">Entrar </button>
+                    <button class="reschedule-btn" id="openCadastro">Criar conta</button>
+                </div>
+
+                <div class="login-form">
+                    <label>E-mail ou Nome de Usuário</label>
+                    <input type="text" id="Login">
+                    <label>Digite sua senha</label>
+                    <input type="password" id="pass">
+                    <button class="confirm-btn" id="loginBtn">Entrar</button>
+                    <div class="login-divider">ou continue com</div>
+                    <button class="reschedule-btn" id="googleLogin">Continuar com Google</button>
+                </div>
+
+            </div>
+
+
+            <div id="cadastroPF" class="hidden">
+
+                <div class="login-tabs">
+                    <button class="reschedule-btn" id="backToLoginPF">Entrar</button>
+                    <button class="confirm-btn">Criar conta</button>
+                </div>
+
+                <div class="user-type-tabs">
+                    <button class="confirm-btn">Pessoa Física</button>
+                    <button class="reschedule-btn" id="pjBtn">Pessoa Jurídica</button>
+                </div>
+
+                <div class="login-form">
+                    <input type="text" placeholder="Nome Completo">
+                    <input type="text" placeholder="CPF">
+                    <input type="text" placeholder="Celular">
+                    <input type="email" placeholder="E-mail">
+                    <input type="password" placeholder="Senha">
+                    <input type="password" placeholder="Confirmar senha">
+                    <div class="popup-actions">
+                        <button class="confirm-btn" id="criarPF">Criar</button>
+                        <button class="reschedule-btn cancelCadastro">Cancelar</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="cadastroPJ" class="hidden">
+
+                <div class="login-tabs">
+                    <button class="reschedule-btn" id="backToLoginPJ">Entrar</button>
+                    <button class="confirm-btn">Criar conta</button>
+                </div>
+
+                <div class="user-type-tabs">
+                    <button class="reschedule-btn" id="pfBtn">Pessoa Física</button>
+                    <button class="confirm-btn">Pessoa Jurídica</button>
+                </div>
+
+                <div class="login-form">
+                    <input type="text" placeholder="Razão Social">
+                    <input type="text" placeholder="Nome Fantasia">
+                    <input type="text" placeholder="CNPJ">
+                    <input type="text" placeholder="Telefone">
+                    <input type="email" placeholder="E-mail">
+                    <input type="password" placeholder="Senha">
+                    <input type="password" placeholder="Confirmar senha">
+                    <div class="popup-actions">
+                        <button class="confirm-btn" id="criarPJ">Criar</button>
+                        <button class="reschedule-btn cancelCadastro">Cancelar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../logar.js"></script>
+    <script src="../ZJS/ongs.js"></script>
 
 </body>
 

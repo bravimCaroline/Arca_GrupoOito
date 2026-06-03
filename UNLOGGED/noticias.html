@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../ZCSS/noticias.css">
+    <link rel="stylesheet" href="../ZCSS/agd.css">
+    <link rel="stylesheet" href="../login.css">
+</head>
+
+<body>
+
+    <header class="header flex flex-between">
+
+        <div class="logo">
+            <img src="../PNG/logo.png" alt="Logo">
+        </div>
+        <nav class="menu flex">
+            <a href="../index.html">Home</a>
+            <div class="filter-divider"></div>
+            <a href="#">Notícias</a>
+            <div class="filter-divider"></div>
+            <a href="../ONGs/ongs.html">ONGs</a>
+            <div class="filter-divider"></div>
+            <a href="#" id="perfilBtn">Login</a>
+        </nav>
+       
+
+    </header>
+
+    <section class="news-banner flex flex-center">
+
+        <div class="banner-image">
+            <img src="../PNG/jornal.png" alt="Notícias">
+        </div>
+
+        <div class="banner-message">
+
+            <h1>Notícias & Informações</h1>
+
+            <p>
+                Acompanhe novidades, campanhas,
+                resgates e ações em defesa dos animais.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="news-content">
+
+        <div class="news-grid">
+
+            <div class="news-card card">
+
+                <div class="news-image">
+                    <img src="../PNG/feira.webp" alt="">
+                </div>
+
+                <div class="news-info">
+
+                    <span class="news-date">
+                        31 Maio 2026
+                    </span>
+
+                    <h2>
+                        Feira de adoção encontra lar
+                        para mais de 50 animais
+                    </h2>
+
+                    <p>
+                        Evento realizado em Vitória reuniu
+                        ONGs parceiras e dezenas de famílias.
+                    </p>
+
+                    <button class="button button-secondary"
+                        onclick="abrirPopupNoticia(
+                        'Feira de adoção encontra lar para mais de 50 animais',
+                        'Evento realizado em Vitória reuniu ONGs parceiras e dezenas de famílias.',
+                        '../PNG/adocao.jpg'
+                    )">
+
+                        Ler mais
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="news-card card">
+
+                <div class="news-image">
+                    <img src="../PNG/campanha.jpeg" alt="racao">
+                </div>
+
+                <div class="news-info">
+
+                    <span class="news-date">
+                        28 Maio 2026
+                    </span>
+
+                    <h2>
+                        Campanha arrecada ração
+                        para animais resgatados
+                    </h2>
+
+                    <p>
+                        Projeto social conseguiu arrecadar
+                        mais de 2 toneladas de ração.
+                    </p>
+
+                    <button class="button button-secondary"
+                        onclick="abrirPopupNoticia(
+                        'Campanha arrecada ração para animais resgatados',
+                        'Projeto social conseguiu arrecadar mais de 2 toneladas de ração para cães e gatos.',
+                        '../PNG/racao.jpg'
+                    )">
+
+                        Ler mais
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="news-card card">
+
+                <div class="news-image">
+                    <img src="../PNG/espaco.jpeg" alt="">
+                </div>
+
+                <div class="news-info">
+
+                    <span class="news-date">
+                        20 Maio 2026
+                    </span>
+
+                    <h2>
+                        ONG amplia espaço para
+                        receber novos animais
+                    </h2>
+
+                    <p>
+                        Novo ambiente ajudará no resgate
+                        e tratamento de animais.
+                    </p>
+
+                    <button class="button button-secondary"
+                        onclick="abrirPopupNoticia(
+                        'ONG amplia espaço para receber novos animais',
+                        'Novo ambiente ajudará no resgate e tratamento de animais abandonados.',
+                        '../PNG/casas.jpg'
+                    )">
+
+                        Ler mais
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 Grupo Oito, Projeto Arca CC1N UVV</p>
+    </footer>
+
+
+    <div id="popup-news" class="popup-overlay">
+
+        <div class="popup card">
+
+            <button class="popup-close"
+                onclick="fecharPopupNoticia()">
+
+                ×
+
+            </button>
+
+            <div class="popup-body">
+
+                <div class="popup-image">
+                    <img id="popup-img" src="" alt="">
+                </div>
+
+                <div class="popup-info">
+
+                    <h2 id="popup-title"></h2>
+
+                    <p id="popup-text"></p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="popup-overlay" id="loginOverlay">
+        <div class="popup login-popup">
+
+            <button class="popup-close" id="closeLogin">×</button>
+
+            <div id="loginScreen">
+
+                <div class="login-tabs">
+                    <button class="confirm-btn">Entrar </button>
+                    <button class="reschedule-btn" id="openCadastro">Criar conta</button>
+                </div>
+
+                <div class="login-form">
+                    <label>E-mail ou Nome de Usuário</label>
+                    <input type="text" id="Login">
+                    <label>Digite sua senha</label>
+                    <input type="password" id="pass">
+                    <button class="confirm-btn" id="loginBtn">Entrar</button>
+                    <div class="login-divider">ou continue com</div>
+                    <button class="reschedule-btn" id="googleLogin">Continuar com Google</button>
+                </div>
+
+            </div>
+
+
+            <div id="cadastroPF" class="hidden">
+
+                <div class="login-tabs">
+                    <button class="reschedule-btn" id="backToLoginPF">Entrar</button>
+                    <button class="confirm-btn">Criar conta</button>
+                </div>
+
+                <div class="user-type-tabs">
+                    <button class="confirm-btn">Pessoa Física</button>
+                    <button class="reschedule-btn" id="pjBtn">Pessoa Jurídica</button>
+                </div>
+
+                <div class="login-form">
+                    <input type="text" placeholder="Nome Completo">
+                    <input type="text" placeholder="CPF">
+                    <input type="text" placeholder="Celular">
+                    <input type="email" placeholder="E-mail">
+                    <input type="password" placeholder="Senha">
+                    <input type="password" placeholder="Confirmar senha">
+                    <div class="popup-actions">
+                        <button class="confirm-btn" id="criarPF">Criar</button>
+                        <button class="reschedule-btn cancelCadastro">Cancelar</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="cadastroPJ" class="hidden">
+
+                <div class="login-tabs">
+                    <button class="reschedule-btn" id="backToLoginPJ">Entrar</button>
+                    <button class="confirm-btn">Criar conta</button>
+                </div>
+
+                <div class="user-type-tabs">
+                    <button class="reschedule-btn" id="pfBtn">Pessoa Física</button>
+                    <button class="confirm-btn">Pessoa Jurídica</button>
+                </div>
+
+                <div class="login-form">
+                    <input type="text" placeholder="Razão Social">
+                    <input type="text" placeholder="Nome Fantasia">
+                    <input type="text" placeholder="CNPJ">
+                    <input type="text" placeholder="Telefone">
+                    <input type="email" placeholder="E-mail">
+                    <input type="password" placeholder="Senha">
+                    <input type="password" placeholder="Confirmar senha">
+                    <div class="popup-actions">
+                        <button class="confirm-btn" id="criarPJ">Criar</button>
+                        <button class="reschedule-btn cancelCadastro">Cancelar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../logar.js"></script>
+    <script src="noticias.js"></script>
+
+</body>
+
+</html>

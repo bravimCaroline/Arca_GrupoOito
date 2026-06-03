@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notícias | ADM</title>
-
+    <title>Notícias</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../login.css">
     <link rel="stylesheet" href="../ZCSS/perfil.css">
@@ -13,6 +12,14 @@
     <link rel="stylesheet" href="usuarios.css">
     <link rel="stylesheet" href="adm-pages.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .page-title {
+            font-size: 52px;
+            font-weight: 300;
+            margin-bottom: 6px !important;
+            color: #222;
+        }
+    </style>
 </head>
 
 <body>
@@ -76,13 +83,17 @@
             </header>
 
             <section class="content">
-            
-                    <div>
-                        <h1 class="page-title">Notícias</h1>
-                        <p style="padding-bottom: ;">Publicações da plataforma</p>
-                    </div>
 
-                    <button class="adm-action">Nova notícia</button>
+                <div>
+                    <h1 class="page-title">Notícias</h1>
+                    <p style="padding-bottom: 30px;">Publicações da plataforma</p>
+                </div>
+
+                <button class="adm-action">Nova notícia</button>
+                <br>
+                <br>
+                <br>
+
 
                 <section class="news-list">
                     <article class="news-item">
@@ -93,11 +104,14 @@
                             <span>Por Amor de Patas</span>
                         </div>
 
-                        <span class="news-date">▣ 01/06/2026</span>
+                        <span class="news-date"><i class="fa-regular fa-calendar" style="color: rgb(57, 51, 51);"></i>
+                            01/06/2026</span>
 
                         <div class="news-actions">
-                            <button class="icon-button" aria-label="Editar notícia">∕</button>
-                            <button class="delete-button" aria-label="Excluir notícia"></button>
+                            <button class="stat-icon"><i class="fa-solid fa-pencil"
+                                    style="color: rgb(57, 51, 51);"></i></button>
+                            <button aria-label="Excluir notícia"> <i class="fa-solid fa-trash"
+                                    style="color: rgb(212, 74, 69);"></i></button>
                         </div>
                     </article>
 
@@ -109,11 +123,14 @@
                             <span>Por Prefeitura da Serra</span>
                         </div>
 
-                        <span class="news-date">▣ 01/06/2026</span>
+                        <span class="news-date"><i class="fa-regular fa-calendar" style="color: rgb(57, 51, 51);"></i>
+                            01/06/2026</span>
 
                         <div class="news-actions">
-                            <button class="icon-button" aria-label="Editar notícia">∕</button>
-                            <button class="delete-button" aria-label="Excluir notícia"></button>
+                            <button class="delete-button" aria-label="Editar notícia"><i class="fa-solid fa-pencil"
+                                    style="color: rgb(57, 51, 51);"></i></button>
+                            <button class="delete-button" aria-label="Excluir notícia"> <i class="fa-solid fa-trash"
+                                    style="color: rgb(212, 74, 69);"></i></button>
                         </div>
                     </article>
 
@@ -125,17 +142,22 @@
                             <span>Por Amor de Patas</span>
                         </div>
 
-                        <span class="news-date">▣ 01/06/2026</span>
+                        <span class="news-date"><i class="fa-regular fa-calendar" style="color: rgb(57, 51, 51);"></i>
+                            01/06/2026</span>
 
                         <div class="news-actions">
-                            <button class="icon-button" aria-label="Editar notícia">∕</button>
-                            <button class="delete-button" aria-label="Excluir notícia"></button>
+                            <button class="delete-button" aria-label="Editar notícia"><i class="fa-solid fa-pencil"
+                                    style="color: rgb(57, 51, 51);"></i></button>
+                            <button class="delete-button" aria-label="Excluir notícia"> <i class="fa-solid fa-trash"
+                                    style="color: rgb(212, 74, 69);"></i></button>
                         </div>
+
                     </article>
                 </section>
-            </main>
-        </div>
+            </section>
+        </main>
     </div>
+
 
 </body>
 
