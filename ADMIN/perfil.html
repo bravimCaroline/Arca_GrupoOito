@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil | ADM</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="usuarios.css">
+    <link rel="stylesheet" href="adm-pages.css">
+</head>
+
+<body>
+
+    <div class="admin-shell">
+        <aside class="admin-sidebar">
+            <div class="profile">
+                <div class="profile-avatar">
+                    <img src="../PNG/prefeitura.png" alt="Administrador">
+                </div>
+
+                <p>Bem vindo</p>
+                <strong>Khazix</strong>
+            </div>
+
+            <nav class="admin-menu">
+                <a href="perfil.html" class="menu-link active">
+                    <span class="menu-icon">●</span>
+                    Perfil do ADM
+                </a>
+
+                <a href="usuarios.html" class="menu-link">
+                    <span class="menu-icon">✦</span>
+                    Usuários comuns
+                </a>
+
+                <a href="ongs.html" class="menu-link">
+                    <span class="menu-icon">⌂</span>
+                    ONGs
+                </a>
+
+                <a href="noticias.html" class="menu-link">
+                    <span class="menu-icon">▣</span>
+                    Notícias
+                </a>
+
+                <a href="denuncias.html" class="menu-link">
+                    <span class="menu-icon">!</span>
+                    Denúncias
+                </a>
+            </nav>
+
+            <a href="../index.html" class="logout">
+                <span class="menu-icon">◂</span>
+                Encerrar sessão
+            </a>
+        </aside>
+
+        <div class="admin-content">
+            <header class="topbar">
+                <button class="topbar-button" aria-label="Abrir menu">□</button>
+                <img src="../PNG/logo.png" alt="Arca" class="topbar-logo">
+                <a href="../index.html" class="home-link" aria-label="Home">⌂</a>
+            </header>
+
+            <main class="profile-page">
+                <h1>Meu Perfil</h1>
+
+                <section class="profile-card">
+                    <div class="profile-banner"></div>
+
+                    <div class="profile-body">
+                        <div class="adm-identity">
+                            <div class="profile-avatar">
+                                <img src="../PNG/prefeitura.png" alt="Administrador">
+                            </div>
+                            <strong>Prefeitura da Serra</strong>
+                        </div>
+
+                        <div class="profile-divider"></div>
+                        <h2 class="profile-section-title">Dados Administrador</h2>
+
+                        <div class="form-grid">
+                            <div class="field">
+                                <label for="nome">Nome completo</label>
+                                <input id="nome" type="text" value="Patinhas Felizes - Associação de Proteção Animal"
+                                    readonly>
+                            </div>
+
+                            <div class="field">
+                                <label for="email">E-mail institucional</label>
+                                <input id="email" type="email" value="Patinhas Felizes" readonly>
+                            </div>
+
+                            <div class="field">
+                                <label for="cpf">CPF</label>
+                                <input id="cpf" type="text" value="12.345.678/0001-90" readonly>
+                            </div>
+
+                            <div class="field">
+                                <label for="telefone">Telefone</label>
+                                <input id="telefone" type="text" value="Maria Helena Souza" readonly>
+                            </div>
+                        </div>
+
+                        <h2 class="tool-title">Ferramentas administrativas</h2>
+                        <p class="tool-subtitle">Acesso rápido às áreas de gestão.</p>
+
+                        <div class="tool-grid">
+                            <a href="noticias.html" class="tool-card">
+                                <span class="tool-icon">▣</span>
+                                <span>
+                                    <strong>Notícias da plataforma</strong>
+                                    <span>Editar e suspender contas.</span>
+                                </span>
+                            </a>
+
+                            <a href="denuncias.html" class="tool-card">
+                                <span class="tool-icon">!</span>
+                                <span>
+                                    <strong>Denúncias</strong>
+                                    <span>Visualizar denúncias</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>

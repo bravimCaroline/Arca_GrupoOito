@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias | ADM</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="usuarios.css">
+    <link rel="stylesheet" href="adm-pages.css">
+</head>
+
+<body>
+
+    <div class="admin-shell">
+        <aside class="admin-sidebar">
+            <div class="profile">
+                <div class="profile-avatar">
+                    <img src="../PNG/prefeitura.png" alt="Administrador">
+                </div>
+
+                <p>Bem vindo</p>
+                <strong>Khazix</strong>
+            </div>
+
+            <nav class="admin-menu">
+                <a href="perfil.html" class="menu-link">
+                    <span class="menu-icon">●</span>
+                    Perfil do ADM
+                </a>
+
+                <a href="usuarios.html" class="menu-link">
+                    <span class="menu-icon">✦</span>
+                    Usuários comuns
+                </a>
+
+                <a href="ongs.html" class="menu-link">
+                    <span class="menu-icon">⌂</span>
+                    ONGs
+                </a>
+
+                <a href="noticias.html" class="menu-link active">
+                    <span class="menu-icon">▣</span>
+                    Notícias
+                </a>
+
+                <a href="denuncias.html" class="menu-link">
+                    <span class="menu-icon">!</span>
+                    Denúncias
+                </a>
+            </nav>
+
+            <a href="../index.html" class="logout">
+                <span class="menu-icon">◂</span>
+                Encerrar sessão
+            </a>
+        </aside>
+
+        <div class="admin-content">
+            <header class="topbar">
+                <button class="topbar-button" aria-label="Abrir menu">□</button>
+                <img src="../PNG/logo.png" alt="Arca" class="topbar-logo">
+                <a href="../index.html" class="home-link" aria-label="Home">⌂</a>
+            </header>
+
+            <main class="adm-page">
+                <section class="adm-header">
+                    <div>
+                        <h1>Notícias</h1>
+                        <p>Publicações da plataforma</p>
+                    </div>
+
+                    <button class="adm-action">Nova notícia</button>
+                </section>
+
+                <section class="news-list">
+                    <article class="news-item">
+                        <img src="../PNG/campanha.jpeg" alt="Pets adotados">
+
+                        <div class="news-text">
+                            <strong>Mais de 100 pets adotados em maio</strong>
+                            <span>Por Amor de Patas</span>
+                        </div>
+
+                        <span class="news-date">▣ 01/06/2026</span>
+
+                        <div class="news-actions">
+                            <button class="icon-button" aria-label="Editar notícia">∕</button>
+                            <button class="delete-button" aria-label="Excluir notícia"></button>
+                        </div>
+                    </article>
+
+                    <article class="news-item">
+                        <img src="../PNG/casas.jpg" alt="Campanha de castração">
+
+                        <div class="news-text">
+                            <strong>Campanha de castração 2026 começa em junho</strong>
+                            <span>Por Prefeitura da Serra</span>
+                        </div>
+
+                        <span class="news-date">▣ 01/06/2026</span>
+
+                        <div class="news-actions">
+                            <button class="icon-button" aria-label="Editar notícia">∕</button>
+                            <button class="delete-button" aria-label="Excluir notícia"></button>
+                        </div>
+                    </article>
+
+                    <article class="news-item">
+                        <img src="../PNG/pata.webp" alt="Adoção responsável">
+
+                        <div class="news-text">
+                            <strong>Dicas para uma adoção responsável</strong>
+                            <span>Por Amor de Patas</span>
+                        </div>
+
+                        <span class="news-date">▣ 01/06/2026</span>
+
+                        <div class="news-actions">
+                            <button class="icon-button" aria-label="Editar notícia">∕</button>
+                            <button class="delete-button" aria-label="Excluir notícia"></button>
+                        </div>
+                    </article>
+                </section>
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>
