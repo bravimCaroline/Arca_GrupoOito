@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamentos</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../login.css">
+    <link rel="stylesheet" href="../ZCSS/perfil.css">
+    <link rel="stylesheet" href="../ZCSS/agd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-content">
+
+                <div class="profile-sidebar">
+                    <img src="https://i.pravatar.cc/150?img=12" alt="">
+                    <h3>Bem vindo<br><b>Khazix</b></h3>
+                </div>
+
+                <nav class="sidebar-menu">
+                    <a href="perfil.html">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span>Perfil</span>
+                    </a>
+
+                    <a href="pet.html">
+                        <i class="fa-solid fa-dog"></i>
+                        <span>Cadastro Pet</span>
+                    </a>
+
+                    <a href="#" class="active-link">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>Agendamento</span>
+                    </a>
+                </nav>
+            </div>
+
+            <a href="#" class="logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Encerrar sessão</span>
+            </a>
+        </aside>
+
+        <main class="main" id="main">
+
+            <header class="topbar">
+                <button class="toggle-btn" id="toggleBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="logo-title">
+                    <a href="home.html"><img src="../PNG/logo.png" alt=""></a>
+                </div>
+            </header>
+
+            <section class="content">
+                <h1 class="page-title">Seus Agendamentos</h1>
+
+                <div class="schedule-header">
+                    <button class="new-schedule-btn" id="agndBtn">Novo Agendamento</button>
+                </div>
+
+                <div class="schedule-stats">
+
+                    <div class="stat-card">
+                        <div>
+                            <span>Total</span>
+                            <strong>0</strong>
+                        </div>
+
+                        <div class="stat-icon blue">
+                            <i class="fa-regular fa-calendar"></i>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div>
+                            <span>Concluídas</span>
+                            <strong>0</strong>
+                        </div>
+
+                        <div class="stat-icon green">
+                            <i class="fa-regular fa-calendar-check"></i>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div>
+                            <span>Remarcar</span>
+                            <strong>0</strong>
+                        </div>
+
+                        <div class="stat-icon yellow">
+                            <i class="fa-regular fa-calendar-minus"></i>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div>
+                            <span>Canceladas</span>
+                            <strong>0</strong>
+                        </div>
+
+                        <div class="stat-icon red">
+                            <i class="fa-regular fa-calendar-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule-layout">
+
+                    <div class="schedule-list-card">
+
+                        <div class="schedule-filters">
+                            <div class="search-box">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" placeholder="Busque o agendamento">
+                            </div>
+                            <select>
+                                <option>Todos</option>
+                            </select>
+                        </div>
+
+                        <div class="appointment-list">
+
+                            <div class="appointment-item active">
+                                <P><b>ⓘ Você não possui nenhum atendimento futuro.</b></P>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <div class="popup-overlay" id="successPopup">
+        <div class="popup popup-success">
+            <h3>Oops! Algo deu errado</h3>
+            <br>
+            <p>Você deve ter um pet cadastrado para marcar um atendimento.</p>
+            <br>
+            <br>
+            <button class="confirm-btn" id="closeSuccessPopup">Voltar</button>
+        </div>
+    </div>
+
+
+    <div class="popup-overlay" id="confirmOverlay">
+        <div class="popup popup-success">
+            <h3>Tem certeza?</h3>
+            <p>Você poderá logar denovo a qualquer momento</p>
+            <div class="popup-actions">
+                <button class="confirm-btn" id="confirmCancel">Sim</button>
+                <button class="reschedule-btn" id="closeConfirm">Não</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../sidebar.js"></script>
+    <script src="error.js"></script>
+    <script src="../ZJS/deslogar.js"></script>
+
+</body>
+
+</html>

@@ -57,12 +57,22 @@ function logar() {
     }
 
     else if (login === "tutor" && senha === "123456") {
-        window.location.href = ("./PERFIL/perfil.html");
+        window.location.href = ("./TUTOR/perfil.html");
         return;
     }
 
-    else if (login === "ong" && senha === "ong$-135") {
-        window.location.href = ("./PERFIL/ong.html");
+    else if (login === "Ong" && senha === "ong$-135") {
+        window.location.href = ("./ONG/perfil.html");
+        return;
+    }
+
+    else if (login === "candidato" && senha === "cand!098") {
+        window.location.href = ("./CANDIDATO/perfil.html");
+        return;
+    }
+
+    else if (login === "prefeitura" && senha === "pref@456") {
+        window.location.href = ("./PREFEITURA/perfil.html");
         return;
     }
 

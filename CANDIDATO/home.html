@@ -5,26 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto ARCA</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="./ADOCAO/animais.css">
-    <link rel="stylesheet" href="./ZCSS/agd.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../ZCSS/animais.css">
 </head>
 
 <body>
 
     <header class="header flex flex-between">
 
-        <div class="logo"><img src="PNG/logo.png" alt=""></div>
+        <div class="logo"><img src="../PNG/logo.png" alt=""></div>
 
         <nav class="menu flex">
-            <a href="index.html">Home</a>
+            <a href="home.html">Home</a>
             <div class="filter-divider"></div>
-            <a href="NOTICIA/noticias.html">Notícias</a>
+            <a href="../NOTICIA/noticias.html">Notícias</a>
             <div class="filter-divider"></div>
             <a href="./ONGs/ongs.html">ONGs</a>
             <div class="filter-divider"></div>
-            <a href="#" id="perfilBtn">Login</a>
+            <a href="perfil.html">Perfil</a>
         </nav>
 
     </header>
@@ -52,7 +50,7 @@
         </div>
 
         <div class="banner-image">
-            <img src="PNG/banner.png" alt="Gato e Cachorro">
+            <img src="../PNG/banner.png" alt="Gato e Cachorro">
         </div>
 
     </section>
@@ -177,103 +175,7 @@
     <footer class="footer">
         <p>© 2026 Grupo Oito , Projeto Arca CC1N UVV</p>
     </footer>
-
-
-    <div class="popup-overlay" id="loginOverlay">
-        <div class="popup login-popup">
-
-            <button class="popup-close" id="closeLogin">×</button>
-
-            <div id="loginScreen">
-
-                <div class="login-tabs">
-                    <button class="confirm-btn">Entrar </button>
-                    <button class="reschedule-btn" id="openCadastro">Criar conta</button>
-                </div>
-
-                <div class="login-form">
-                    <label>E-mail ou Nome de Usuário</label>
-                    <input type="text" id="Login">
-                    <label>Digite sua senha</label>
-                    <input type="password" id="pass">
-                    <button class="confirm-btn" id="loginBtn">Entrar</button>
-                    <div class="login-divider">ou continue com</div>
-                    <button class="reschedule-btn" id="googleLogin">Continuar com Google</button>
-                </div>
-
-            </div>
-
-
-            <div id="cadastroPF" class="hidden">
-
-                <div class="login-tabs">
-                    <button class="reschedule-btn" id="backToLoginPF">Entrar</button>
-                    <button class="confirm-btn">Criar conta</button>
-                </div>
-
-                <div class="user-type-tabs">
-                    <button class="confirm-btn">Pessoa Física</button>
-                    <button class="reschedule-btn" id="pjBtn">Pessoa Jurídica</button>
-                </div>
-
-                <div class="login-form">
-                    <input type="text" placeholder="Nome Completo">
-                    <input type="text" placeholder="CPF">
-                    <input type="text" placeholder="Celular">
-                    <input type="email" placeholder="E-mail">
-                    <input type="password" placeholder="Senha">
-                    <input type="password" placeholder="Confirmar senha">
-                    <div class="popup-actions">
-                        <button class="confirm-btn" id="criarPF">Criar</button>
-                        <button class="reschedule-btn cancelCadastro">Cancelar</button>
-                    </div>
-                </div>
-
-            </div>
-
-            <div id="cadastroPJ" class="hidden">
-
-                <div class="login-tabs">
-                    <button class="reschedule-btn" id="backToLoginPJ">Entrar</button>
-                    <button class="confirm-btn">Criar conta</button>
-                </div>
-
-                <div class="user-type-tabs">
-                    <button class="reschedule-btn" id="pfBtn">Pessoa Física</button>
-                    <button class="confirm-btn">Pessoa Jurídica</button>
-                </div>
-
-                <div class="login-form">
-                    <input type="text" placeholder="Razão Social">
-                    <input type="text" placeholder="Nome Fantasia">
-                    <input type="text" placeholder="CNPJ">
-                    <input type="text" placeholder="Telefone">
-                    <input type="email" placeholder="E-mail">
-                    <input type="password" placeholder="Senha">
-                    <input type="password" placeholder="Confirmar senha">
-                    <div class="popup-actions">
-                        <button class="confirm-btn" id="criarPJ">Criar</button>
-                        <button class="reschedule-btn cancelCadastro">Cancelar</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="popup-overlay" id="confirmOverlay">
-        <div class="popup popup-success">
-            <h3>Tem certeza?</h3>
-            <p>As informações não serão salvas</p>
-            <div class="popup-actions">
-                <button class="confirm-btn" id="confirmCancel">Sim</button>
-                <button class="reschedule-btn" id="closeConfirm">Não</button>
-            </div>
-        </div>
-    </div>
-
-    <script src="logar.js"></script>
-
+    
 </body>
 
 </html>
