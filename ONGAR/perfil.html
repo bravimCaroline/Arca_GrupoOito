@@ -7,14 +7,11 @@
     <title>Meu Perfil</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../login.css">
+    <link rel="stylesheet" href="usuarios.css">
+    <link rel="stylesheet" href="adm-pages.css">
     <link rel="stylesheet" href="../ZCSS/perfil.css">
     <link rel="stylesheet" href="../ZCSS/agd.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        .border {
-            box-shadow: var(--shadow);
-        }
-    </style>
 </head>
 
 <body>
@@ -26,8 +23,8 @@
             <div class="sidebar-content">
 
                 <div class="profile-sidebar">
-                    <img src="../PNG/prefeitura.png" alt="">
-                    <h3>Bem vindo<br><b>Adm</b></h3>
+                    <img src="../PNG/mel.png" alt="">
+                    <h3>Bem vindo<br><b>Patinhas</b></h3>
                 </div>
 
                 <nav class="sidebar-menu">
@@ -37,7 +34,7 @@
                         <span>Perfil</span>
                     </a>
 
-                    <a href="denuncia.html">
+                    <a href="pet.html">
                         <i class="fa-solid fa-dog"></i>
                         <span>Denúncias</span>
                     </a>
@@ -89,12 +86,13 @@
 
                         <div class="profile-user">
 
-                            <img src="../PNG/prefeitura.png" alt="Administrador">
+                            <img src="../PNG/prefeitura.png" alt="">
 
                             <div class="profile-info">
-                                <h3>Adm Adimin Developer</h3>
-                                <span>Tutor desde 6767</span>
+                                <h3>Prefeitura Municipal da Serra</h3>
+                                <span>Desde 1900 e bolinha</span>
                             </div>
+
                         </div>
 
                         <button class="edit-btn">
@@ -112,44 +110,28 @@
 
                             <div class="form-group">
                                 <label>Nome</label>
-                                <input type="text" value="Adm" disabled>
+                                <input type="text" value="Prefeitura Municipal da Serra" disabled>
                             </div>
 
                             <div class="form-group">
-                                <label>Sobrenome</label>
-                                <input type="text" value="Adimin Developer" disabled>
+                                <label>E-mail Institucional</label>
+                                <input type="text" placeholder="naotemnadaqui@placeholder.com" disabled>
                             </div>
 
                             <div class="form-group">
-                                <label>CPF</label>
+                                <label>CNPJ</label>
                                 <input type="text" placeholder="000.000.000-00" disabled>
                             </div>
 
                             <div class="form-group">
-                                <label>Data de nascimento</label>
-                                <input type="text" value="11/09/2001" disabled>
+                                <label for="telefone">Telefone</label>
+                                <input id="telefone" type="text" value="Maria Helena Souza" readonly>
                             </div>
 
-                            <div class="form-group">
-                                <label>Gênero</label>
-
-                                <select disabled>
-                                    <option>Masculino</option>
-                                    <option>Feminino</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Celular</label>
-                                <input type="text" value="(27) 67676-****" disabled>
-                            </div>
-
-                        </div>
-
-                        <div class="divider"></div>
+                            <div class="divider"></div>
 
                         <h2>Endereço</h2>
-                        <p>Onde podemos vamos te encontrar.</p>
+                        <p>Localização da sede.</p>
 
                         <div class="form-grid">
 
@@ -191,34 +173,17 @@
                                     <option>RJ</option>
                                 </select>
                             </div>
-                        </div>
 
-                        <div class="divider"></div>
+                         </div>
 
-                        <h2>Ferramentas Administrativas</h2>
-                        <p>Acesso rápido a ferramentas de gestão.</p>
-
-                        <div class="form-grid">
-
-
-                            <a href="noticias.html" class="stat-card border">
-                                <span>
-                                    <strong>Notícias da plataforma</strong>
-                                    <span>Editar e suspender contas.</span>
-                                </span>
-                            </a>
-
-                            <a href="denuncias.html" class="stat-card border">
-                                <span>
-                                    <strong>Denúncias</strong>
-                                    <span>Visualizar denúncias</span>
-                                </span>
-                            </a>
-
-                        </div>
                     </div>
+
+                </div>
+
             </section>
+
         </main>
+
     </div>
 
     <div class="popup-overlay" id="confirmOverlay">

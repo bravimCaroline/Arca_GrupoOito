@@ -1,3 +1,33 @@
+.adm-page {
+    padding: 29px 34px;
+}
+
+.adm-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    max-width: 900px;
+    margin-bottom: 32px;
+    padding: 0;
+}
+
+.adm-header h1,
+.profile-page h1 {
+    margin: 0 0 8px;
+    color: #2e3748;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1;
+    text-shadow: none;
+}
+
+.adm-header p {
+    color: #8795ad;
+    font-size: 14px;
+    font-weight: 700;
+}
+
 .adm-action {
     min-width: 110px;
     height: 35px;
@@ -244,6 +274,63 @@
     font-size: 11px;
 }
 
+.tool-title {
+    margin-top: 24px;
+    color: #263147;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.tool-subtitle {
+    margin-top: 2px;
+    color: #748197;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    gap: 138px;
+    margin-top: 88px;
+}
+
+.tool-card {
+    min-height: 77px;
+    padding: 18px 24px;
+    border: 1px solid #73ddef;
+    border-radius: 10px;
+    background: #d5faff;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.tool-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background: #22b9cf;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.tool-card strong {
+    display: block;
+    margin-bottom: 6px;
+    color: #213047;
+    font-size: 14px;
+}
+
+.tool-card span {
+    color: #536178;
+    font-size: 10px;
+}
+
 .complaint-summary {
     display: grid;
     grid-template-columns: repeat(3, minmax(150px, 1fr));
@@ -282,7 +369,7 @@
     color: #238a4c;
 }
 
-.complaints-list {
+.complaints-table-wrap {
     width: 900px;
     max-width: 100%;
     overflow: hidden;
@@ -291,17 +378,34 @@
     padding: 0;
 }
 
-.complaint-item {
-    display: grid;
-    grid-template-columns: 76px 1.4fr .9fr .8fr .8fr 82px;
-    align-items: center;
-    gap: 14px;
-    min-height: 82px;
-    padding: 12px 22px 12px 16px;
-    border-bottom: 1px solid #aeb8c4;
+.complaints-table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.complaint-item:last-child {
+.complaints-table th {
+    height: 54px;
+    padding: 0 18px;
+    background: #22b9cf;
+    color: #fff;
+    font-size: 13px;
+    text-align: left;
+}
+
+.complaints-table td {
+    height: 78px;
+    padding: 10px 18px;
+    border-bottom: 1px solid #d1d7e0;
+    color: #253044;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.complaints-table tr:nth-child(even) td {
+    background: #f7f7f7;
+}
+
+.complaints-table tr:last-child td {
     border-bottom: 0;
 }
 
@@ -358,6 +462,11 @@
     color: #9b6a00;
 }
 
+.complaint-status.false-report {
+    background: #eadcf8;
+    color: #6f3aa0;
+}
+
 .complaint-priority.high {
     background: #ffd2d2;
     color: #c40000;
@@ -370,7 +479,8 @@
 
 .complaint-actions {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    gap: 8px;
 }
 
 .small-action {
@@ -381,6 +491,157 @@
     background: #e6ebf2;
     color: #1c2535;
     font-size: 9px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.view-action {
+    background: #22b9cf;
+    color: #fff;
+}
+
+.edit-action {
+    background: #f0f3f8;
+}
+
+.adm-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: rgba(26, 36, 52, .45);
+}
+
+.adm-modal.active {
+    display: flex;
+}
+
+.adm-modal-card {
+    position: relative;
+    width: 760px;
+    max-width: 100%;
+    max-height: 90vh;
+    overflow: auto;
+    padding: 28px;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 20px 45px rgba(20, 30, 45, .22);
+}
+
+.adm-modal-card h2 {
+    margin-bottom: 18px;
+    color: #253044;
+    font-size: 24px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    background: transparent;
+    color: #253044;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.modal-details {
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    gap: 20px;
+}
+
+.modal-details img {
+    width: 210px;
+    height: 210px;
+    border-radius: 10px;
+    object-fit: cover;
+    background: #eef3f8;
+}
+
+.details-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.details-table th,
+.details-table td {
+    padding: 10px 12px;
+    border: 1px solid #d6dde7;
+    font-size: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.details-table th {
+    width: 130px;
+    background: #eef3f8;
+    color: #253044;
+}
+
+.details-table td {
+    color: #526078;
+}
+
+.edit-card {
+    width: 460px;
+}
+
+.modal-subtitle {
+    margin: -8px 0 18px;
+    color: #738199;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.edit-form {
+    display: grid;
+    gap: 10px;
+}
+
+.edit-form label {
+    color: #2c3446;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.edit-form input,
+.edit-form select,
+.edit-form textarea {
+    width: 100%;
+    border: 1px solid #aeb7c5;
+    border-radius: 4px;
+    background: #f7f9fc;
+    color: #253044;
+    font: inherit;
+    font-size: 12px;
+}
+
+.edit-form input,
+.edit-form select {
+    height: 34px;
+    padding: 0 10px;
+}
+
+.edit-form textarea {
+    padding: 10px;
+    resize: vertical;
+}
+
+.save-status {
+    height: 36px;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 5px;
+    background: #22b9cf;
+    color: #fff;
+    font-size: 12px;
     font-weight: 800;
     cursor: pointer;
 }
@@ -400,12 +661,12 @@
     }
 
     .news-list,
-    .complaints-list {
+    .complaints-table-wrap {
         overflow-x: auto;
     }
 
     .news-item,
-    .complaint-item {
+    .complaints-table {
         min-width: 650px;
     }
 
@@ -425,5 +686,13 @@
 
     .tool-grid {
         margin-top: 42px;
+    }
+
+    .modal-details {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-details img {
+        width: 100%;
     }
 }

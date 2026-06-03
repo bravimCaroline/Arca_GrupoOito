@@ -86,6 +86,7 @@
 
                 <div>
                     <h1 class="page-title">Notícias</h1>
+
                     <p style="padding-bottom: 30px;">Publicações da plataforma</p>
                 </div>
 
@@ -93,7 +94,6 @@
                 <br>
                 <br>
                 <br>
-
 
                 <section class="news-list">
                     <article class="news-item">
@@ -108,9 +108,9 @@
                             01/06/2026</span>
 
                         <div class="news-actions">
-                            <button class="stat-icon"><i class="fa-solid fa-pencil"
+                            <button class="delete-button" aria-label="Editar notícia"><i class="fa-solid fa-pencil"
                                     style="color: rgb(57, 51, 51);"></i></button>
-                            <button aria-label="Excluir notícia"> <i class="fa-solid fa-trash"
+                            <button class="delete-button" aria-label="Editar notícia"> <i class="fa-solid fa-trash"
                                     style="color: rgb(212, 74, 69);"></i></button>
                         </div>
                     </article>
@@ -151,13 +151,27 @@
                             <button class="delete-button" aria-label="Excluir notícia"> <i class="fa-solid fa-trash"
                                     style="color: rgb(212, 74, 69);"></i></button>
                         </div>
-
                     </article>
                 </section>
             </section>
         </main>
+
     </div>
 
+    <div class="popup-overlay" id="confirmOverlay">
+        <div class="popup popup-success">
+            <h3>Tem certeza?</h3>
+            <p>Você poderá logar denovo a qualquer momento</p>
+            <div class="popup-actions">
+                <button class="confirm-btn" id="confirmCancel">Sim</button>
+                <button class="reschedule-btn" id="closeConfirm">Não</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../sidebar.js"></script>
+    <script src="../ZJS/deslogar.js"></script>
+    <script src="../ADMIN/denuncias.js"></script>
 
 </body>
 
