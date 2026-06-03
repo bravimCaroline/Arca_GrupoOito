@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Adoções</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="adocao-adim.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+    <aside class="sidebar">
+
+        <div class="logo flex">
+            <img src="../PNG/logo.png" alt="">
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a href="../DASHBOARD/dashboard.html">
+                 Dashboard
+            </a>
+
+            <a href="">
+                 Noticias
+            </a>
+
+            <a href="../ADOCAO-ADIM/adocao-adim.html" class="active-link">
+                 Adoções
+            </a>
+
+            <a href="#">
+                 Consultas
+            </a>
+
+            <a href="../DENUNCIAFC/denunciafc.html">
+                 Denúncias
+            </a>
+
+        </nav>
+
+    </aside>
+    <main class="main">
+
+        <div class="dashboard-header flex flex-between">
+
+            <div>
+                <h2>Controle de Adoções</h2>
+                <p>Gerencie animais e adoções realizadas</p>
+            </div>
+
+            <button class="button button-secondary" id="openPopup">
+                + Adicionar Animal
+            </button>
+
+        </div>
+        <div class="dashboard-cards flex wrap gap">
+
+            <div class="card dashboard-card">
+                <h3>Disponíveis</h3>
+                <p>28</p>
+            </div>
+
+            <div class="card dashboard-card">
+                <h3>Adotados</h3>
+                <p>87</p>
+            </div>
+
+            <div class="card dashboard-card">
+                <h3>Solicitações</h3>
+                <p>14</p>
+            </div>
+
+        </div>
+
+        <div class="table-container">
+
+            <table class="adoption-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Animal</th>
+                        <th>Adotante</th>
+                        <th>Contato</th>
+                        <th>Cidade</th>
+                        <th>Data</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td class="animal-info">
+
+                            <img src="../PNG/mel.png">
+
+                            <div>
+                                <strong>Mel</strong>
+                                <p>Porte Médio</p>
+                            </div>
+
+                        </td>
+
+                        <td>Ana Clara</td>
+
+                        <td>(27) 99999-9999</td>
+
+                        <td>Vila Velha</td>
+
+                        <td>12/05/2026</td>
+
+                        <td>
+                            <span class="status adopted">
+                                Adotado
+                            </span>
+                        </td>
+
+                        <td>
+
+                            <button class="button button-secondary">
+                                Ver
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="animal-info">
+
+                            <img src="../PNG/leia.png">
+
+                            <div>
+                                <strong>Leia</strong>
+                                <p>Porte Médio</p>
+                            </div>
+
+                        </td>
+
+                        <td>João Pedro</td>
+
+                        <td>(27) 98888-8888</td>
+
+                        <td>Vitória</td>
+
+                        <td>03/04/2026</td>
+
+                        <td>
+                            <span class="status pending">
+                                Em análise
+                            </span>
+                        </td>
+
+                        <td>
+
+                            <button class="button button-secondary">
+                                Ver
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+
+</html>

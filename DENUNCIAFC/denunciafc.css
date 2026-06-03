@@ -1,0 +1,118 @@
+.dashboard{
+    display:flex;
+    min-height:100vh;
+    background:var(--cinza-claro);
+}
+
+.sidebar{
+    width:250px;
+    background:var(--azul);
+    padding:30px 20px;
+    color:var(--branco);
+}
+
+.sidebar-menu{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-top:40px;
+}
+
+.sidebar-menu a{
+    padding:14px;
+    border-radius:8px;
+    transition:var(--transition);
+    font-weight:bold;
+}
+
+.sidebar-menu a:hover,
+.active-link{
+    background:rgba(255,255,255,0.15);
+}
+
+.main{
+    flex:1;
+    padding:40px;
+}
+
+.dashboard-header{
+    margin-bottom:40px;
+}
+
+.denuncia-cards{
+    margin-bottom:40px;
+}
+
+.denuncia-card{
+    width:240px;
+    background:var(--branco);
+    padding:25px;
+    box-shadow:var(--shadow);
+}
+
+.denuncia-card p{
+    margin-top:10px;
+    font-size:35px;
+    color:var(--laranja);
+    font-weight:bold;
+}
+
+.table-container{
+    background:var(--branco);
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:var(--shadow);
+}
+
+.denuncia-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.denuncia-table th{
+    background:var(--azul);
+    color:var(--branco);
+}
+
+.denuncia-table th,
+.denuncia-table td{
+    padding:18px;
+    text-align:left;
+}
+
+.denuncia-table tr:nth-child(even){
+    background:#f9f9f9;
+}
+
+.status,
+.priority{
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.aberta{
+    background:#ffe8b3;
+    color:#9b6a00;
+}
+
+.andamento{
+    background:#cfe8ff;
+    color:#0060b6;
+}
+
+.resolvida{
+    background:#d4f8d4;
+    color:#2d8a2d;
+}
+
+.high{
+    background:#ffd2d2;
+    color:#c40000;
+}
+
+.medium{
+    background:#fff0c7;
+    color:#c27b00;
+}

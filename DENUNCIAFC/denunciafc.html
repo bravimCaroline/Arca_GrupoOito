@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Denúncias</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="denunciafc.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="logo flex">
+            <img src="../PNG/logo.png" alt="">
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a href="../DASHBOARD/dashboard.html">Dashboard</a>
+            <a href="#">Animais</a>
+            <a href="#">Adoções</a>
+            <a href="#">Consultas</a>
+            <a href="#" class="active-link"> Denúncias</a>
+            <a href="#"> Funcionários</a>
+
+        </nav>
+
+    </aside>
+
+    <main class="main">
+
+        <div class="dashboard-header">
+
+            <h2>Central de Denúncias</h2>
+
+            <p>
+                Gerencie denúncias recebidas pela ONG
+            </p>
+
+        </div>
+
+        <div class="flex wrap gap denuncia-cards">
+
+            <div class="card denuncia-card">
+                <h3>Recebidas</h3>
+                <p>42</p>
+            </div>
+
+            <div class="card denuncia-card">
+                <h3>Em andamento</h3>
+                <p>18</p>
+            </div>
+
+            <div class="card denuncia-card">
+                <h3>Resolvidas</h3>
+                <p>24</p>
+            </div>
+
+        </div>
+
+        <div class="table-container">
+
+            <table class="denuncia-table">
+
+                <thead>
+
+                    <tr>
+                        <th>Protocolo</th>
+                        <th>Local</th>
+                        <th>Tipo</th>
+                        <th>Prioridade</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>#1023</td>
+
+                        <td>Serra - ES</td>
+
+                        <td>Maus-tratos</td>
+
+                        <td>
+                            <span class="priority high">
+                                Alta
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="status andamento">
+                                Em andamento
+                            </span>
+                        </td>
+
+                        <td>
+
+                            <button class="button button-secondary">
+                                Ver
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#1024</td>
+
+                        <td>Vila Velha - ES</td>
+
+                        <td>Abandono</td>
+
+                        <td>
+                            <span class="priority medium">
+                                Média
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="status aberta">
+                                Aberta
+                            </span>
+                        </td>
+
+                        <td>
+
+                            <button class="button button-secondary">
+                                Ver
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#1025</td>
+
+                        <td>Vitória - ES</td>
+
+                        <td>Animal ferido</td>
+
+                        <td>
+                            <span class="priority high">
+                                Alta
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="status resolvida">
+                                Resolvida
+                            </span>
+                        </td>
+
+                        <td>
+
+                            <button class="button button-secondary">
+                                Ver
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+
+</html>
