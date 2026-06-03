@@ -7,10 +7,14 @@
     <title>Meu Perfil</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../login.css">
-    <link rel="stylesheet" href="usuarios.css">
-    <link rel="stylesheet" href="adm-pages.css">
     <link rel="stylesheet" href="../ZCSS/perfil.css">
+    <link rel="stylesheet" href="../ZCSS/agd.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .border {
+            box-shadow: var(--shadow);
+        }
+    </style>
 </head>
 
 <body>
@@ -23,7 +27,7 @@
 
                 <div class="profile-sidebar">
                     <img src="../PNG/prefeitura.png" alt="">
-                    <h3>Bem vindo<br><b>Khazix</b></h3>
+                    <h3>Bem vindo<br><b>Adm</b></h3>
                 </div>
 
                 <nav class="sidebar-menu">
@@ -33,7 +37,7 @@
                         <span>Perfil</span>
                     </a>
 
-                    <a href="pet.html">
+                    <a href="denuncia.html">
                         <i class="fa-solid fa-dog"></i>
                         <span>Denúncias</span>
                     </a>
@@ -61,81 +65,168 @@
                 <i class="fa-solid fa-right-from-bracket"></i>
                 <span>Encerrar sessão</span>
             </a>
-            
+
         </aside>
 
-        <div class="admin-content">
+        <main class="main" id="main">
+
             <header class="topbar">
-                <button class="topbar-button" aria-label="Abrir menu">□</button>
-                <img src="../PNG/logo.png" alt="Arca" class="topbar-logo">
-                <a href="../index.html" class="home-link" aria-label="Home">⌂</a>
+
+                <button class="toggle-btn" id="toggleBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="logo-title">
+                    <a href="home.html"><img src="../PNG/logo.png" alt=""></a>
+                </div>
+
             </header>
 
-            <main class="profile-page">
-                <h1>Meu Perfil</h1>
+            <section class="content">
 
-                <section class="profile-card">
+                <h1 class="page-title">Meu Perfil</h1>
+
+                <div class="profile-card">
+
                     <div class="profile-banner"></div>
 
-                    <div class="profile-body">
-                        <div class="adm-identity">
-                            <div class="profile-avatar">
-                                <img src="../PNG/prefeitura.png" alt="Administrador">
+                    <div class="profile-header">
+
+                        <div class="profile-user">
+
+                            <img src="../PNG/prefeitura.png" alt="Administrador">
+
+                            <div class="profile-info">
+                                <h3>Adm Adimin Developer</h3>
+                                <span>Tutor desde 6767</span>
                             </div>
-                            <strong>Prefeitura da Serra</strong>
                         </div>
 
-                        <div class="profile-divider"></div>
-                        <h2 class="profile-section-title">Dados Administrador</h2>
+                        <button class="edit-btn">
+                            Editar Perfil
+                        </button>
+
+                    </div>
+
+                    <div class="profile-content">
+
+                        <h2>Dados institucionais</h2>
+                        <p>Informações registradas sobre sua instituição.</p>
 
                         <div class="form-grid">
-                            <div class="field">
-                                <label for="nome">Nome completo</label>
-                                <input id="nome" type="text" value="Patinhas Felizes - Associação de Proteção Animal"
-                                    readonly>
+
+                            <div class="form-group">
+                                <label>Nome</label>
+                                <input type="text" value="Adm" disabled>
                             </div>
 
-                            <div class="field">
-                                <label for="email">E-mail institucional</label>
-                                <input id="email" type="email" value="Patinhas Felizes" readonly>
+                            <div class="form-group">
+                                <label>Sobrenome</label>
+                                <input type="text" value="Adimin Developer" disabled>
                             </div>
 
-                            <div class="field">
-                                <label for="cpf">CPF</label>
-                                <input id="cpf" type="text" value="12.345.678/0001-90" readonly>
+                            <div class="form-group">
+                                <label>CPF</label>
+                                <input type="text" placeholder="000.000.000-00" disabled>
                             </div>
 
-                            <div class="field">
-                                <label for="telefone">Telefone</label>
-                                <input id="telefone" type="text" value="Maria Helena Souza" readonly>
+                            <div class="form-group">
+                                <label>Data de nascimento</label>
+                                <input type="text" value="11/09/2001" disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Gênero</label>
+
+                                <select disabled>
+                                    <option>Masculino</option>
+                                    <option>Feminino</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Celular</label>
+                                <input type="text" value="(27) 67676-****" disabled>
+                            </div>
+
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <h2>Endereço</h2>
+                        <p>Onde podemos vamos te encontrar.</p>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+                                <label>CEP</label>
+                                <input type="text" placeholder="000.000.000-00" disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Bairro</label>
+                                <input type="text" placeholder="000.000.000-00" disabled>
+                            </div>
+
+                        </div>
+
+                        <div class="address-grid">
+
+                            <div class="form-group">
+                                <label>Rua</label>
+                                <input type="text" value="Rua Jugle Diff" disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Número</label>
+                                <input type="text" value="444" disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Cidade</label>
+                                <input type="text" placeholder="000.000.000-00" disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Estado(UF)</label>
+
+                                <select disabled>
+                                    <option>ES</option>
+                                    <option>SP</option>
+                                    <option>RJ</option>
+                                </select>
                             </div>
                         </div>
 
-                        <h2 class="tool-title">Ferramentas administrativas</h2>
-                        <p class="tool-subtitle">Acesso rápido às áreas de gestão.</p>
+                        <div class="divider"></div>
 
-                        <div class="tool-grid">
-                            <a href="noticias.html" class="tool-card">
-                                <span class="tool-icon">▣</span>
+                        <h2>Ferramentas Administrativas</h2>
+                        <p>Acesso rápido a ferramentas de gestão.</p>
+
+                        <div class="form-grid">
+
+
+                            <a href="noticias.html" class="stat-card border">
                                 <span>
                                     <strong>Notícias da plataforma</strong>
                                     <span>Editar e suspender contas.</span>
                                 </span>
                             </a>
 
-                            <a href="denuncias.html" class="tool-card">
-                                <span class="tool-icon">!</span>
+                            <a href="denuncias.html" class="stat-card border">
                                 <span>
                                     <strong>Denúncias</strong>
                                     <span>Visualizar denúncias</span>
                                 </span>
                             </a>
+
                         </div>
                     </div>
-                </section>
-            </main>
-        </div>
+            </section>
+        </main>
     </div>
+
+    <script src="../sidebar.js"></script>
 
 </body>
 

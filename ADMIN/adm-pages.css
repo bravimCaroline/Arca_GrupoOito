@@ -244,63 +244,6 @@
     font-size: 11px;
 }
 
-.tool-title {
-    margin-top: 24px;
-    color: #263147;
-    font-size: 15px;
-    font-weight: 800;
-}
-
-.tool-subtitle {
-    margin-top: 2px;
-    color: #748197;
-    font-size: 10px;
-    font-weight: 700;
-}
-
-.tool-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(220px, 1fr));
-    gap: 138px;
-    margin-top: 88px;
-}
-
-.tool-card {
-    min-height: 77px;
-    padding: 18px 24px;
-    border: 1px solid #73ddef;
-    border-radius: 10px;
-    background: #d5faff;
-    display: flex;
-    align-items: center;
-    gap: 28px;
-}
-
-.tool-icon {
-    width: 32px;
-    height: 32px;
-    border-radius: 6px;
-    background: #22b9cf;
-    color: #fff;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 17px;
-    font-weight: 900;
-}
-
-.tool-card strong {
-    display: block;
-    margin-bottom: 6px;
-    color: #213047;
-    font-size: 14px;
-}
-
-.tool-card span {
-    color: #536178;
-    font-size: 10px;
-}
-
 .complaint-summary {
     display: grid;
     grid-template-columns: repeat(3, minmax(150px, 1fr));
