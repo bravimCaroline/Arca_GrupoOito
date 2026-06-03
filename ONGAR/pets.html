@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denúncias</title>
+    <title>Controle de Adoções</title>
+
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="denunciap.css">
     <link rel="stylesheet" href="../ZCSS/perfil.css">
+    <link rel="stylesheet" href="../PREFEITURA/denunciap.css">
     <link rel="stylesheet" href="../ZCSS/agd.css">
+    <link rel="stylesheet" href="pets.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
@@ -20,27 +23,25 @@
             <div class="sidebar-content">
 
                 <div class="profile-sidebar">
-                    <img src="https://i.pravatar.cc/150?img=4" alt="">
-                    <h3>Bem vindo<br><b>Prefeitura da Serra</b></h3>
+                    <img src="https://i.pravatar.cc/150?img=38" alt="">
+                    <h3>Bem vindo<br><b>Patinhas</b></h3>
                 </div>
 
                 <nav class="sidebar-menu">
-
                     <a href="perfil.html">
                         <i class="fa-solid fa-circle-user"></i>
                         <span>Perfil</span>
                     </a>
 
                     <a href="#">
-                        <i class="fa-solid fa-bullhorn"></i>
-                        <span>Denúncias</span>
+                        <i class="fa-solid fa-file-pen"></i>
+                        <span>Controle</span>
                     </a>
 
                     <a href="solicitacoes.html">
-                        <i class="fa-solid fa-address-card"></i>
-                        <span>Solicitações</span>
+                        <i class="fa-solid fa-dog"></i>
+                        <span>Animais</span>
                     </a>
-
                 </nav>
 
             </div>
@@ -68,40 +69,46 @@
 
             <section class="content">
 
-                <div class="dashboard-header">
-                    <h1 class="page-title">Central de Denúncias</h1>
-                    <p style="padding-bottom: 30px;">Gerencie denúncias recebidas por ONGs e cidadãos.</p>
+                <div class="dashboard-header flex flex-between">
+                    <div>
+                        <h1 class="page-title">Controle de Adoções</h1>
+                        <p style="padding-bottom: 30px;">Gerencie animais e adoções realizadas</p>
+                    </div>
+
+                    <button class="button button-secondary" id="openPopup">
+                        + Adicionar Animal
+                    </button>
                 </div>
 
-                <div class="flex wrap gap denuncia-cards">
+                <div class="dashboard-cards flex wrap gap">
 
-                    <div class="card denuncia-card">
+                    <div class="card dashboard-card">
                         <div>
-                        <h3>Recebidas</h3>
-                        <p>42</p>
+                            <h3>Disponíveis</h3>
+                            <p>28</p>
                         </div>
-                        <div class="stat-icon red">
-                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        <div class="stat-icon green">
+                            <i class="fa-solid fa-shield-cat"></i>
                         </div>
                     </div>
 
-                    <div class="card denuncia-card">
+                    <div class="card dashboard-card">
                         <div>
-                        <h3>Em andamento</h3>
-                        <p>18</p>
+                            <h3>Adotados</h3>
+                            <p>87</p>
+                        </div>
+                        <div class="stat-icon blue">
+                            <i class="fa-solid fa-house-chimney-window"></i>
+                        </div>
+                    </div>
+
+                    <div class="card dashboard-card">
+                        <div>
+                            <h3>Solicitações</h3>
+                            <p>14</p>
                         </div>
                         <div class="stat-icon yellow">
                             <i class="fa-solid fa-hourglass-half"></i>
-                        </div>
-                    </div>
-
-                    <div class="card denuncia-card">
-                        <div>
-                        <h3>Resolvidas</h3>
-                        <p>24</p>
-                        </div>
-                        <div class="stat-icon green">
-                            <i class="fa-solid fa-square-check"></i>
                         </div>
                     </div>
 
@@ -109,46 +116,42 @@
 
                 <div class="table-container">
 
-                    <table class="denuncia-table">
+                    <table class="adoption-table">
+
                         <thead>
 
                             <tr>
-                                <th>Protocolo</th>
-                                <th>Local</th>
-                                <th>Tipo</th>
-                                <th>Prioridade</th>
+
+                                <th>Animal</th>
+                                <th>Interessado</th>
+                                <th>Contato</th>
+                                <th>Cidade</th>
+                                <th>Data</th>
                                 <th>Status</th>
                                 <th>Ações</th>
+
                             </tr>
 
                         </thead>
+
                         <tbody>
 
                             <tr>
-                                <td>#1023</td>
-                                <td>Serra - ES</td>
-                                <td>Maus-tratos</td>
-                                <td>
-                                    <span class="priority high">Alta</span>
+                                <td class="animal-info">
+                                    <img src="../PNG/mel.png">
+                                    <div>
+                                        <strong>Mel</strong>
+                                        <p>Porte Médio</p>
+                                    </div>
                                 </td>
+                                <td>Ana Clara</td>
+                                <td>(27) 99999-9999</td>
+                                <td>Vila Velha</td>
+                                <td>12/05/2026</td>
                                 <td>
-                                    <span class="status andamento">Em andamento</span>
-                                </td>
-                                <td>
-                                    <button class="button button-secondary">Ver</button>
-                                </td>
-                            </tr>
-
-                            <tr>
-
-                                <td>#1024</td>
-                                <td>Vila Velha - ES</td>
-                                <td>Abandono</td>
-                                <td>
-                                    <span class="priority medium">Média</span>
-                                </td>
-                                <td>
-                                    <span class="status aberta">Aberta</span>
+                                    <span class="status adopted">
+                                        Tutor Aprovado
+                                    </span>
                                 </td>
                                 <td>
                                     <button class="button button-secondary">Ver</button>
@@ -156,25 +159,30 @@
                             </tr>
 
                             <tr>
-                                <td>#1025</td>
-                                <td>Vitória - ES</td>
-                                <td>Animal ferido</td>
-                                <td>
-                                    <span class="priority high">Alta</span>
+                                <td class="animal-info">
+                                    <img src="../PNG/leia.png">
+                                    <div>
+                                        <strong>Leia</strong>
+                                        <p>Porte Médio</p>
+                                    </div>
                                 </td>
+                                <td>João Pedro</td>
+                                <td>(27) 98888-8888</td>
+                                <td>Vitória</td>
+                                <td>03/04/2026</td>
                                 <td>
-                                    <span class="status resolvida">Resolvida</span>
+                                    <span class="status pending">
+                                        Em análise
+                                    </span>
                                 </td>
                                 <td>
                                     <button class="button button-secondary">Ver</button>
                                 </td>
                             </tr>
-
                         </tbody>
                     </table>
 
                 </div>
-
             </section>
         </main>
     </div>
