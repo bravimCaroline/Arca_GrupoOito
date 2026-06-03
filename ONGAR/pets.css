@@ -1,0 +1,82 @@
+.dashboard-header{
+    margin-bottom:40px;
+}
+
+.dashboard-cards{
+    margin-bottom:40px;
+}
+
+.dashboard-card{
+    width:240px;
+    background:var(--branco);
+    padding:25px;
+    box-shadow:var(--shadow);
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.dashboard-card p{
+    margin-top:10px;
+    font-size:36px;
+    font-weight:bold;
+    color:var(--laranja);
+}
+
+.table-container{
+    background:var(--branco);
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:var(--shadow);
+}
+
+.adoption-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.adoption-table th{
+    background:var(--azul);
+    color:var(--branco);
+}
+
+.adoption-table th,
+.adoption-table td{
+    padding:18px;
+    text-align:center;
+}
+
+.adoption-table tr:nth-child(even){
+    background:#f9f9f9;
+}
+
+.animal-info{
+    display:flex;
+    align-items:center;
+    text-align: center;
+    gap:15px;
+}
+
+.animal-info img{
+    width:60px;
+    height:60px;
+    border-radius:12px;
+    object-fit:cover;
+}
+
+.status{
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.adopted{
+    background:#d4f8d4;
+    color:#2d8a2d;
+}
+
+.pending{
+    background:#fff0c7;
+    color:#c27b00;
+}
