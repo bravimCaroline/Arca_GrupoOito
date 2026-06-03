@@ -62,7 +62,7 @@ function logar() {
     }
 
     else if (login === "Ong" && senha === "ong$-135") {
-        window.location.href = ("./ONG/perfil.html");
+        window.location.href = ("./ONGAR/perfil.html");
         return;
     }
 
