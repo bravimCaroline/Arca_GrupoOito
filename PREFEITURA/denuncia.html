@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncias</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="denunciap.css">
+    <link rel="stylesheet" href="../ZCSS/perfil.css">
+    <link rel="stylesheet" href="../ZCSS/agd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-content">
+
+                <div class="profile-sidebar">
+                    <img src="https://i.pravatar.cc/150?img=4" alt="">
+                    <h3>Bem vindo<br><b>Prefeitura da Serra</b></h3>
+                </div>
+
+                <nav class="sidebar-menu">
+
+                    <a href="perfil.html">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span>Perfil</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <span>Denúncias</span>
+                    </a>
+
+                    <a href="solicitacoes.html">
+                        <i class="fa-solid fa-address-card"></i>
+                        <span>Solicitações</span>
+                    </a>
+
+                </nav>
+
+            </div>
+
+            <a href="#" class="logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Encerrar sessão</span>
+            </a>
+
+        </aside>
+
+        <main class="main" id="main">
+
+            <header class="topbar">
+
+                <button class="toggle-btn" id="toggleBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="logo-title">
+                    <a href="home.html"><img src="../PNG/logo.png" alt=""></a>
+                </div>
+
+            </header>
+
+            <section class="content">
+
+                <div class="dashboard-header">
+
+                    <h1 class="page-title">Central de Denúncias</h1>
+
+                    <p style="padding-bottom: 30px;">Gerencie denúncias recebidas por ONGs e cidadãos.</p>
+
+                </div>
+
+                <div class="flex wrap gap denuncia-cards">
+
+                    <div class="card denuncia-card">
+                        <div>
+                        <h3>Recebidas</h3>
+                        <p>42</p>
+                        </div>
+                        <div class="stat-icon red">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                    </div>
+
+                    <div class="card denuncia-card">
+                        <div>
+                        <h3>Em andamento</h3>
+                        <p>18</p>
+                        </div>
+                        <div class="stat-icon yellow">
+                            <i class="fa-solid fa-hourglass-half"></i>
+                        </div>
+                    </div>
+
+                    <div class="card denuncia-card">
+                        <div>
+                        <h3>Resolvidas</h3>
+                        <p>24</p>
+                        </div>
+                        <div class="stat-icon green">
+                            <i class="fa-solid fa-square-check"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="table-container">
+
+                    <table class="denuncia-table">
+                        <thead>
+
+                            <tr>
+                                <th>Protocolo</th>
+                                <th>Local</th>
+                                <th>Tipo</th>
+                                <th>Prioridade</th>
+                                <th>Status</th>
+                                <th>Ações</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>#1023</td>
+                                <td>Serra - ES</td>
+                                <td>Maus-tratos</td>
+                                <td>
+                                    <span class="priority high">Alta</span>
+                                </td>
+                                <td>
+                                    <span class="status andamento">Em andamento</span>
+                                </td>
+                                <td>
+                                    <button class="button button-secondary">Ver</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+
+                                <td>#1024</td>
+                                <td>Vila Velha - ES</td>
+                                <td>Abandono</td>
+                                <td>
+                                    <span class="priority medium">Média</span>
+                                </td>
+                                <td>
+                                    <span class="status aberta">Aberta</span>
+                                </td>
+                                <td>
+                                    <button class="button button-secondary">Ver</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>#1025</td>
+                                <td>Vitória - ES</td>
+                                <td>Animal ferido</td>
+                                <td>
+                                    <span class="priority high">Alta</span>
+                                </td>
+                                <td>
+                                    <span class="status resolvida">Resolvida</span>
+                                </td>
+                                <td>
+                                    <button class="button button-secondary">Ver</button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <div class="popup-overlay" id="confirmOverlay">
+        <div class="popup popup-success">
+            <h3>Tem certeza?</h3>
+            <p>Você poderá logar denovo a qualquer momento</p>
+            <div class="popup-actions">
+                <button class="confirm-btn" id="confirmCancel">Sim</button>
+                <button class="reschedule-btn" id="closeConfirm">Não</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../sidebar.js"></script>
+    <script src="../ZJS/deslogar.js"></script>
+
+</body>
+
+</html>
